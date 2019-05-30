@@ -105,7 +105,7 @@ public class FindWord extends JFrame implements ActionListener {
                 textFind.setText(selection);
             }
         }
-        //
+        // In case that the selectStart or selectEnd is null value
         try {
             int selectStart = text.getText().indexOf(selection, startIndex);
             int selectEnd = selectStart + selection.length();
@@ -151,6 +151,5 @@ public class FindWord extends JFrame implements ActionListener {
         else if (actionEvent.getSource() == cancel)
             this.setVisible(false);
     }
-
 
 }
