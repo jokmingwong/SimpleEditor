@@ -4,9 +4,9 @@ import java.awt.*;
 import javax.swing.text.*;
 
 
-public class HightLight extends DefaultHighlighter.DefaultHighlightPainter {
+public class HighLight extends DefaultHighlighter.DefaultHighlightPainter {
 
-    public HightLight(Color color) {
+    public HighLight(Color color) {
         super(color);
     }
 
@@ -31,7 +31,12 @@ public class HightLight extends DefaultHighlighter.DefaultHighlightPainter {
     }
 
     public void cancelPaint(JTextComponent textComponent) {
-
+        Highlighter ht = textComponent.getHighlighter();
+        Highlighter.Highlight[] highlights = ht.getHighlights();
+        for (Highlighter.Highlight h : highlights) {
+            if (h.getPainter() instanceof HighLight)
+                ht.removeHighlight(h);
+        }
     }
 
 }

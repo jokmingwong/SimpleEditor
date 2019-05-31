@@ -1,15 +1,15 @@
 package SimpleEditor;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.*;
 
 public class FindWord extends JFrame implements ActionListener {
-    /*Set a action listener*/
+    // Set a action listener
     // private static final long serialVersionUID=1L;
-    int startIndex = 0, select_from = 1;
+    private int startIndex = 0, select_from = 1;
 
-    /* Set */
-    private JLabel label1, label2;
+    // Set swing component
     private JTextField textFind, textReplace;
     private JButton findButton, findNext, replace, replaceAll, cancel;
     private JTextArea text;
@@ -18,9 +18,11 @@ public class FindWord extends JFrame implements ActionListener {
         // initialize the component
         this.text = text;
 
-        label1 = new JLabel("Find:");
-        label2 = new JLabel("Replace:");
+        JLabel label1 = new JLabel("Find:");
+        JLabel label2 = new JLabel("Replace:");
         textFind = new JTextField(50);
+        textFind.setFont(new Font("Consolas", Font.BOLD, 13));
+
         textReplace = new JTextField(50);
         findButton = new JButton("Find:");
         findNext = new JButton("Find next:");
