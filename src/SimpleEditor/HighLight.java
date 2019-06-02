@@ -3,6 +3,12 @@ package SimpleEditor;
 import java.awt.*;
 import javax.swing.text.*;
 
+/**
+ * Finish the highlight function and recall function
+ * using class Highlight and the class JTextComponent
+ *
+ * @author adam
+ */
 
 public class HighLight extends DefaultHighlighter.DefaultHighlightPainter {
 
