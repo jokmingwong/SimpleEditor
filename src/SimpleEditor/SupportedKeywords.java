@@ -14,6 +14,16 @@ import java.util.Map;
  * to this class. Then, update the switch statement in UI.java.</p>
  */
 public class SupportedKeywords {
+	
+	public final static char EOF = '\uFFFF';
+	public final static char NULL_CHAR = '\u0000';
+	public final static char NEWLINE = '\n';
+	public final static char BACKSPACE = '\b';
+	public final static char TAB = '\t';
+	public final static String GLYPH_NEWLINE = "\u21b5";
+	public final static String GLYPH_SPACE = "\u00b7";
+	public final static String GLYPH_TAB = "\u00bb";
+
 
     private static String[] supportedLanguages = {".cpp", ".java"};
 
