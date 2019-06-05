@@ -1,5 +1,8 @@
-package simplejavatexteditor;
-
+package SimpleEditor;
+/*
+ * æ’¤é”€å’Œé‡åš
+ * @author LiNan
+ * */
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.undo.*;
@@ -7,59 +10,59 @@ import javax.swing.undo.*;
 public class Undo extends JFrame {
 
     /**
-	 * ÖØ×öºÍ³·Ïú
-	 * °´Å¥¿ØÖÆ»òÕßÔÚeditMenuÀïÃæµã
-	 * ½¨ÒéÁ½¸ö¶¼ÓÃ
+	 * é‡åšå’Œæ’¤é”€
+	 * æŒ‰é’®æ§åˆ¶æˆ–è€…åœ¨editMenué‡Œé¢ç‚¹
+	 * å»ºè®®ä¸¤ä¸ªéƒ½ç”¨
 	 */
 	private static final long serialVersionUID = 1L;
-	public static UndoManager undomg = new UndoManager();
+	public static UndoManager manager = new UndoManager();
 	public static JMenuItem undo,redo;
 	
 	/* 
-	 * ÓÃ°´Å¥¿ØÖÆ
-	 * ´«ÈëÁ½¸öbuttonºÍtextarea¼´¿É
+	 * ç”¨æŒ‰é’®æ§åˆ¶
+	 * ä¼ å…¥ä¸¤ä¸ªbuttonå’Œtextareaå³å¯
 	 * Undo.UndoInit(undoButton, redoButton, textArea);
-	 * µ«ÊÇ³·ÏúµÄ¿ì½İ¼üÖ»ÄÜÉèÖÃÎªalt+z
+	 * ä½†æ˜¯æ’¤é”€çš„å¿«æ·é”®åªèƒ½è®¾ç½®ä¸ºalt+z
 	 */
-    public static void UndoButtonInit(JButton unbtn,JButton rebtn,JTextArea textArea) {
+    public static void UndoButtonInit(JButton undoButton,JButton redoButton,JTextArea textArea) {
     	
-        textArea.getDocument().addUndoableEditListener(undomg);
+        textArea.getDocument().addUndoableEditListener(manager);
 
         
-        unbtn.addActionListener(new ActionListener() {
+        undoButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
-                if(undomg.canUndo()) {
-                    undomg.undo();
+                if(manager.canUndo()) {
+                    manager.undo();
                 } else {
-                    JOptionPane.showMessageDialog(null,"ÎŞ·¨³·Ïú","¾¯¸æ",JOptionPane.WARNING_MESSAGE);
+                    JOptionPane.showMessageDialog(null,"æ— æ³•æ’¤é”€","è­¦å‘Š",JOptionPane.WARNING_MESSAGE);
                 }
             }
         });
-      //ÕâÀïÉèÖÃ¿ì½İ¼üalt+z unbtn.setMnemonic(KeyEvent.VK_Z);
-        rebtn.addActionListener(new ActionListener() {
+      //è¿™é‡Œè®¾ç½®å¿«æ·é”®alt+z undoButton.setMnemonic(KeyEvent.VK_Z);
+        redoButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
-                if(undomg.canRedo()) {
-                    undomg.redo();
+                if(manager.canRedo()) {
+                    manager.redo();
                 } else {
-                    JOptionPane.showMessageDialog(null,"ÎŞ·¨»Ö¸´","¾¯¸æ",JOptionPane.WARNING_MESSAGE);
+                    JOptionPane.showMessageDialog(null,"æ— æ³•æ¢å¤","è­¦å‘Š",JOptionPane.WARNING_MESSAGE);
                 }
             }
         });
         
     }
     /* 
-     * ÔÚ²Ëµ¥Àï³·Ïú£¬¿ì½İ¼üctrl+z
-     * ÖØ×öÃ»ÓĞ¿ì½İ¼ü
+     * åœ¨èœå•é‡Œæ’¤é”€ï¼Œå¿«æ·é”®ctrl+z
+     * é‡åšæ²¡æœ‰å¿«æ·é”®
      * Undo.undoManuInit(menuEdit, undoIcon);
      * */
     public static void undoManuInit(JMenu menuEdit,ImageIcon undoIcon,ImageIcon redoIcon) {
     	 undo = new JMenuItem("Undo",undoIcon);
     	 undo.addActionListener(new ActionListener() {
              public void actionPerformed(ActionEvent evt) {
-                 if(undomg.canUndo()) {
-                     undomg.undo();
+                 if(manager.canUndo()) {
+                     manager.undo();
                  } else {
-                     JOptionPane.showMessageDialog(null,"ÎŞ·¨³·Ïú","¾¯¸æ",JOptionPane.WARNING_MESSAGE);
+                     JOptionPane.showMessageDialog(null,"æ— æ³•æ’¤é”€","è­¦å‘Š",JOptionPane.WARNING_MESSAGE);
                  }
              }
          });
@@ -69,10 +72,10 @@ public class Undo extends JFrame {
          redo = new JMenuItem("Redo",redoIcon);
          redo.addActionListener(new ActionListener() {
              public void actionPerformed(ActionEvent evt) {
-                 if(undomg.canRedo()) {
-                     undomg.redo();
+                 if(manager.canRedo()) {
+                     manager.redo();
                  } else {
-                     JOptionPane.showMessageDialog(null,"ÎŞ·¨»Ö¸´","¾¯¸æ",JOptionPane.WARNING_MESSAGE);
+                     JOptionPane.showMessageDialog(null,"æ— æ³•æ¢å¤","è­¦å‘Š",JOptionPane.WARNING_MESSAGE);
                  }
              }
          });
