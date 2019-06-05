@@ -1,14 +1,16 @@
 package SimpleEditor;
 
 /*
- *ÉèÖÃĞĞºÅ£¬UIÖĞÇëÔÚ
+ * @author LiNan
+ *è®¾ç½®è¡Œå·
+ *UIä¸­è¯·åœ¨
  *JScrollPane scrollPane = new JScrollPane(textArea);
- *ºó¼ÓÈë
- *LineNumberHeaderView lineNumber = new LineNumberHeaderView();
+ *ååŠ å…¥
+ *LineNumber lineNumber = new LineNumber();
  *scrollPane.setRowHeaderView(lineNumber);
- *¸ü¸Ä×ÖÌåµÄfontType.addActionListener(ÀïÃæÒ²Òª¸Ä  Ä¿Ç°ÊÇ¼ÓÒ»¾ä
+ *æ›´æ”¹å­—ä½“çš„fontType.addActionListener(é‡Œé¢ä¹Ÿè¦æ”¹  ç›®å‰æ˜¯åŠ ä¸€å¥
  *lineNumber.setFont(new Font(p, Font.PLAIN, s));
- *ÏÂÃæ¸ü¸Ä×ÖºÅµÄfontSize.addActionListener(Í¬Àí
+ *ä¸‹é¢æ›´æ”¹å­—å·çš„fontSize.addActionListener(åŒç†
  * */
 import java.awt.Color;
 import java.awt.Dimension;
@@ -18,32 +20,33 @@ import java.awt.Graphics;
 import java.awt.Rectangle;
 
 
-//ĞĞºÅÏÔÊ¾
-public class LineNumberHeaderView extends javax.swing.JComponent {
+//è¡Œå·æ˜¾ç¤º
+public class LineNumber extends javax.swing.JComponent {
 
 	private static final long serialVersionUID = 1L;
-	private final  Font DEFAULT_FONT = new Font(Font.MONOSPACED, Font.PLAIN, 11);
-    public final Color DEFAULT_BACKGROUD = new Color(228, 228, 228);
-    public final Color DEFAULT_FOREGROUD = Color.BLACK;
-    public final int nHEIGHT = Integer.MAX_VALUE - 1000000;
+	private final Font D_FONT = new Font(Font.MONOSPACED, Font.PLAIN, 11);
+    public final Color D_BACKGROUD = new Color(228, 228, 228);
+    public final Color D_FOREGROUD = Color.BLACK;
+    public final int maxHEIGHT = Integer.MAX_VALUE - 999999;
     public final int MARGIN = 5;
+    private final int STARTOFFSET = 4;
     private int lineHeight;
     private int fontLineHeight;
-    private int currentRowWidth;
+    private int nowRowWidth;
     private FontMetrics fontMetrics;
  
-    public LineNumberHeaderView() {
-        setFont(DEFAULT_FONT);
-        setForeground(DEFAULT_FOREGROUD);
-        setBackground(DEFAULT_BACKGROUD);
+    public LineNumber() {
+        setFont(D_FONT);
+        setForeground(D_FOREGROUD);
+        setBackground(D_BACKGROUD);
         setPreferredSize(9999);
     }
  
     public void setPreferredSize(int row) {
         int width = fontMetrics.stringWidth(String.valueOf(row));
-        if (currentRowWidth < width) {
-            currentRowWidth = width;
-            setPreferredSize(new Dimension(2 * MARGIN + width + 1, nHEIGHT));
+        if (nowRowWidth < width) {
+            nowRowWidth = width;
+            setPreferredSize(new Dimension(2 * MARGIN + width + 1, maxHEIGHT));
         }
     }
  
@@ -68,25 +71,25 @@ public class LineNumberHeaderView extends javax.swing.JComponent {
     }
  
     public int getStartOffset() {
-        return 4;
+        return STARTOFFSET;
     }
  
     @Override
     protected void paintComponent(Graphics g) {
-        int nlineHeight = getLineHeight();
-        int startOffset = getStartOffset();
+        int nowLineHeight = getLineHeight();
+        int nowStartOffset = getStartOffset();
         Rectangle drawHere = g.getClipBounds();
         g.setColor(getBackground());
         g.fillRect(drawHere.x, drawHere.y, drawHere.width, drawHere.height);
         g.setColor(getForeground());
-        int startLineNum = (drawHere.y / nlineHeight) + 1;
-        int endLineNum = startLineNum + (drawHere.height / nlineHeight);
-        int start = (drawHere.y / nlineHeight) * nlineHeight + nlineHeight - startOffset;
+        int startLineNum = (drawHere.y / nowLineHeight) + 1;
+        int endLineNum = startLineNum + (drawHere.height / nowLineHeight);
+        int start = (drawHere.y / nowLineHeight) * nowLineHeight + nowLineHeight - nowStartOffset;
         for (int i = startLineNum; i <= endLineNum; ++i) {
             String lineNum = String.valueOf(i);
             int width = fontMetrics.stringWidth(lineNum);
-            g.drawString(lineNum + " ", MARGIN + currentRowWidth - width - 1, start);
-            start += nlineHeight;
+            g.drawString(lineNum + " ", MARGIN + nowRowWidth - width - 1, start);
+            start += nowLineHeight;
         }
         setPreferredSize(endLineNum);
     }
