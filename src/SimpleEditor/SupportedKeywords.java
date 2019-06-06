@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+
 /**
  * <h1>A class to store the programming language keywords and
  * provide access to them.</h1>
@@ -13,8 +14,18 @@ import java.util.Map;
  * to this class. Then, update the switch statement in UI.java.</p>
  */
 public class SupportedKeywords {
+	
+	public final static char EOF = '\uFFFF';
+	public final static char NULL_CHAR = '\u0000';
+	public final static char NEWLINE = '\n';
+	public final static char BACKSPACE = '\b';
+	public final static char TAB = '\t';
+	public final static String GLYPH_NEWLINE = "\u21b5";
+	public final static String GLYPH_SPACE = "\u00b7";
+	public final static String GLYPH_TAB = "\u00bb";
 
-    private static String[] supportedLanguages = {".cpp",".java"};
+
+    private static String[] supportedLanguages = {".cpp", ".java"};
 
     private static String[] java = {"abstract", "assert", "boolean",
             "break", "byte", "case", "catch", "char", "class", "const",
@@ -26,44 +37,56 @@ public class SupportedKeywords {
             "synchronized", "this", "throw", "throws", "transient", "true",
             "try", "void", "volatile", "while", "String"};
 
-    private static String[] cpp = { "auto", "const", "double", "float", "int", "short",
-                "struct", "unsigned", "break", "continue", "else", "for", "long", "signed",
-                "switch", "void", "case", "default", "enum", "goto", "register", "sizeof",
-                "typedef", "volatile", "char", "do", "extern", "if", "return", "static",
-                "union", "while", "asm", "dynamic_cast", "namespace", "reinterpret_cast", "try",
-                "bool", "explicit", "new", "static_cast", "typeid", "catch", "false", "operator",
-                "template", "typename", "class", "friend", "private", "this", "using", "const_cast",
-                "inline", "public", "throw", "virtual", "delete", "mutable", "protected", "true", "wchar_t" };
+    private static String[] cpp = {"auto", "const", "double", "float", "int", "short",
+            "struct", "unsigned", "break", "continue", "else", "for", "long", "signed",
+            "switch", "void", "case", "default", "enum", "goto", "register", "sizeof",
+            "typedef", "volatile", "char", "do", "extern", "if", "return", "static",
+            "union", "while", "asm", "dynamic_cast", "namespace", "reinterpret_cast", "try",
+            "bool", "explicit", "new", "static_cast", "typeid", "catch", "false", "operator",
+            "template", "typename", "class", "friend", "private", "this", "using", "const_cast",
+            "inline", "public", "throw", "virtual", "delete", "mutable", "protected", "true", "wchar_t"};
 
     public String[] getSupportedLanguages() {
         return supportedLanguages;
     }
 
-    private static String[] brackets = { "{", "[","(" };
-    private static String[] bCompletions = { "}","]", ")" };
+    private static String[] brackets = {"{", "[", "("};
+    private static String[] bCompletions = {"}", "]", ")"};
+
+
     private static HashMap<String, String> bracketMap = new HashMap<>();
+
     static {
         bracketMap.put("{", "{}");
         bracketMap.put("[", "[]");
         bracketMap.put("(", "()");
     }
+
     public String[] getJavaKeywords() {
         return java;
     }
+
     public String[] getCppKeywords() {
         return cpp;
     }
+
     public ArrayList<String> getBracketCompletions() {
         return new ArrayList<>(Arrays.asList(bCompletions));
     }
+
     public ArrayList<String> getBrackets() {
         return new ArrayList<>(Arrays.asList(brackets));
     }
+
     public ArrayList<String> setKeywords(String[] arr) {
         return new ArrayList<>(Arrays.asList(arr));
     }
 
-    public Map<String, String> getBracketMap(){
+    public static void setBracketMap(HashMap<String, String> bracketMap) {
+        SupportedKeywords.bracketMap = bracketMap;
+    }
+
+    public Map<String, String> getBracketMap() {
         return bracketMap;
     }
 
