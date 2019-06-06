@@ -247,4 +247,8 @@ public class AutoComplete implements DocumentListener {
 
     @Override
     public void changedUpdate(DocumentEvent e) {}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f6fcf86eb8d9c694ca54c8820425cde5810ea527
