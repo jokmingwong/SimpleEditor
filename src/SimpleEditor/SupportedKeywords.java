@@ -12,6 +12,10 @@ import java.util.Map;
  * <p>Makes multiple language support possible and makes adding new language
  * support convenient. To add more keywords, add a string array and getters
  * to this class. Then, update the switch statement in UI.java.</p>
+ * 
+ * @modifiedby dengkunquan
+ * @modifieddate 2019-06-07 20:06
+ * @modifiedcontent add a spaceSet for Utility (of AutoComplete class)
  */
 public class SupportedKeywords {
 	
@@ -24,6 +28,16 @@ public class SupportedKeywords {
 	public final static String GLYPH_SPACE = "\u00b7";
 	public final static String GLYPH_TAB = "\u00bb";
 
+    public static Set<String> spaceSet = new HashSet<String>(Arrays.asList(
+            String.valueOf(EOF),
+            String.valueOf(NULL_CHAR),
+            String.valueOf(NEWLINE),
+            String.valueOf(BACKSPACE),
+            String.valueOf(TAB),
+            SPACE,
+            GLYPH_NEWLINE,
+            GLYPH_SPACE,
+            GLYPH_TAB));
 
     private static String[] supportedLanguages = {".cpp", ".java"};
 
