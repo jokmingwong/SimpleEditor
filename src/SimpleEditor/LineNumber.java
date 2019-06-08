@@ -25,12 +25,12 @@ public class LineNumber extends javax.swing.JComponent {
 
 	private static final long serialVersionUID = 1L;
 	public final Color D_BACKGROUD = new Color(220, 225, 214);
-	private final Font D_FONT = new Font("黑体", Font.PLAIN, 22);
+	private final Font D_FONT = new Font("黑体", Font.BOLD, 22);
 	public final Color D_FOREGROUD = Color.BLACK;
 	private int fontLineHeight;
 	private FontMetrics fontMetrics;
 	private int lineHeight;
-	public final int MARGIN = 2;
+	public final int MARGIN = 3;
 	public final int maxHEIGHT = Integer.MAX_VALUE - 999999;
 	private int nowRowWidth;
 	private final int STARTOFFSET = 4;
@@ -61,6 +61,7 @@ public class LineNumber extends javax.swing.JComponent {
 		g.setColor(getBackground());
 		g.fillRect(drawHere.x, drawHere.y, drawHere.width, drawHere.height);
 		g.setColor(getForeground());
+		g.setFont(D_FONT);
 		int startLineNum = (drawHere.y / nowLineHeight) + 1;
 		int endLineNum = startLineNum + (drawHere.height / nowLineHeight);
 		int start = (drawHere.y / nowLineHeight) * nowLineHeight + nowLineHeight - nowStartOffset;
@@ -78,6 +79,7 @@ public class LineNumber extends javax.swing.JComponent {
 		super.setFont(font);
 		fontMetrics = getFontMetrics(getFont());
 		fontLineHeight = fontMetrics.getHeight();
+		setLineHeight(fontLineHeight);
 	}
 
 	public void setLineHeight(int lineHeight) {

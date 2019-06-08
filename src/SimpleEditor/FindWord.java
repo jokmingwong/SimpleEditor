@@ -17,6 +17,10 @@ public class FindWord extends JFrame implements ActionListener {
     public FindWord(JTextArea text) {
         // initialize the component
         this.text = text;
+        setSize(460,230);
+        setTitle("查找");
+        setBackground(Color.white);
+        setIconImage(new ImageIcon("icons/main.png").getImage());
 
         JLabel label1 = new JLabel("Find:");
         JLabel label2 = new JLabel("Replace:");
@@ -34,7 +38,7 @@ public class FindWord extends JFrame implements ActionListener {
         setLayout(null);
 
         // Set label size
-        int labelWidth = 100;
+        int labelWidth = 50;
         int labelHeight = 30;
 
         // Label and text bound designation
@@ -51,34 +55,30 @@ public class FindWord extends JFrame implements ActionListener {
         add(textReplace);
 
         // Button bound designation and add listener
-        findButton.setBounds(225, 5, 115, 20);
+        findButton.setBounds(250, 5, 115, 20);
         add(findButton);
         findButton.addActionListener(this);
 
-        findNext.setBounds(225, 30, 115, 20);
+        findNext.setBounds(250, 30, 115, 20);
         add(findNext);
         findNext.addActionListener(this);
 
-        replace.setBounds(225, 50, 115, 20);
+        replace.setBounds(250, 50, 115, 20);
         add(replace);
         replace.addActionListener(this);
 
-        replaceAll.setBounds(225, 72, 115, 20);
+        replaceAll.setBounds(250, 72, 115, 20);
         add(replaceAll);
         replaceAll.addActionListener(this);
 
-        cancel.setBounds(225, 94, 115, 20);
+        cancel.setBounds(250, 94, 115, 20);
         add(cancel);
         cancel.addActionListener(this);
-
-        // set the size of window
-        setSize(360, 160);
 
         // set visible and we can add more attributions in this area
         setLocationRelativeTo(text);
         setVisible(true);
-        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
     }
 
     public void find() {

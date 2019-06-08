@@ -10,7 +10,7 @@ import java.awt.event.MouseEvent;
  * 此类用于Button的自定义美化，提供给UI调用
  * 1.无边框button
  * 2.cover显示背景色
- * 3.按下显示蓝色
+ * 3.按下显示
  *
  *
  * @author  pj

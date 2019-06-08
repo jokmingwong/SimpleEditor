@@ -31,11 +31,11 @@ public class UI extends JFrame implements ActionListener {
             setting = new JMenu("Setting"),
             about = new JMenu("About");
     private final JMenuItem newFile, openFile, saveFile, close, cut, copy, paste, clearFile, selectAll, quickFind,
-            aboutMe, aboutSoftware, wordWrap, format;
+            aboutMe, aboutSoftware, wordWrap, format,seting;
     private final JToolBar toolBar = new JToolBar();
-    private final Nbutton openButton, saveButton, clearButton, quickButton, aboutMeButton, aboutButton, closeButton, boldButton, italicButton, undoButton, redoButton, formatButton;
+    private final Nbutton openButton, saveButton, clearButton, searchButton, aboutMeButton, aboutButton, closeButton, boldButton, italicButton, undoButton, redoButton, formatButton;
     private final Action selectAllAction;
-    private final Nbutton newButton;
+    private final Nbutton newButton,setButton;
 
     //icons
     private final ImageIcon titleIcon = new ImageIcon("icons/main.png");
@@ -66,6 +66,9 @@ public class UI extends JFrame implements ActionListener {
     private final ImageIcon aboutMeIcon = new ImageIcon("icons/about_me.png");
     private final ImageIcon aboutIcon = new ImageIcon("icons/about.png");
 
+    // setup icons - Setting Menu
+    private final ImageIcon setIcon = new ImageIcon("icons/setting.png");
+
     //more function support
     private SupportedKeywords supportedKeywords = new SupportedKeywords();
     private HighLight highLight = new HighLight(new Color(255, 219, 138));
@@ -88,7 +91,6 @@ public class UI extends JFrame implements ActionListener {
         setSize(1280, 720);
         setIconImage(titleIcon.getImage());
         setLocationRelativeTo(null);
-        setBackground(new Color(255, 255, 255));
 
         // menus
         file.setFont(daultMenuFont);
@@ -125,81 +127,107 @@ public class UI extends JFrame implements ActionListener {
         saveFile = new JMenuItem("Save", saveIcon);
         close = new JMenuItem("Quit", closeIcon);
         clearFile = new JMenuItem("Clear", clearIcon);
-        quickFind = new JMenuItem("Quick", searchIcon);
+        quickFind = new JMenuItem("Find and Replace", searchIcon);
         aboutMe = new JMenuItem("About Me", aboutMeIcon);
         aboutSoftware = new JMenuItem("About Software", aboutIcon);
         format = new JMenuItem("Format", formatIcon);
+        seting = new JMenuItem("Setting",setIcon);
 
         //tools bar
+        Dimension fualtDiv = new Dimension(10,16);
+        Dimension bigDiv = new Dimension(36,28);
         this.add(toolBar, BorderLayout.NORTH);
         toolBar.setFloatable(false);
         toolBar.setBackground(Color.white);
+        toolBar.addSeparator(new Dimension(10,28));
         // used to create space between button groups
+        //file  tool
         newButton = new Nbutton(newIcon);
         newButton.setToolTipText("New");
         newButton.addActionListener(this);
         toolBar.add(newButton);
-        toolBar.addSeparator();
+        toolBar.addSeparator(fualtDiv);
 
         openButton = new Nbutton(openIcon);
         openButton.setToolTipText("Open");
         openButton.addActionListener(this);
         toolBar.add(openButton);
-        toolBar.addSeparator();
+        toolBar.addSeparator(fualtDiv);
 
         saveButton = new Nbutton(saveIcon);
         saveButton.setToolTipText("Save");
         saveButton.addActionListener(this);
         toolBar.add(saveButton);
-        toolBar.addSeparator();
+        toolBar.addSeparator(bigDiv);
 
-        clearButton = new Nbutton(clearIcon);
-        clearButton.setToolTipText("Clear All");
-        clearButton.addActionListener(this);
-        toolBar.add(clearButton);
-        toolBar.addSeparator();
-
-        formatButton = new Nbutton(formatIcon);
-        formatButton.setToolTipText("Format");
-        formatButton.addActionListener(this);
-        toolBar.add(formatButton);
-        toolBar.addSeparator();
-
-        quickButton = new Nbutton(searchIcon);
-        quickButton.setToolTipText("Quick Search");
-        quickButton.addActionListener(this);
-        toolBar.add(quickButton);
-        toolBar.addSeparator();
-
-        aboutMeButton = new Nbutton(aboutMeIcon);
-        aboutMeButton.setToolTipText("About Me");
-        aboutMeButton.addActionListener(this);
-        toolBar.add(aboutMeButton);
-        toolBar.addSeparator();
-
-        aboutButton = new Nbutton(aboutIcon);
-        aboutButton.setToolTipText("About NotePad PH");
-        aboutButton.addActionListener(this);
-        toolBar.add(aboutButton);
-        toolBar.addSeparator();
-
-        closeButton = new Nbutton(closeIcon);
-        closeButton.setToolTipText("Quit");
-        closeButton.addActionListener(this);
-        toolBar.add(closeButton);
-        toolBar.addSeparator();
-
+        //edit tool
         boldButton = new Nbutton(boldIcon);
         boldButton.setToolTipText("Bold");
         boldButton.addActionListener(this);
         toolBar.add(boldButton);
-        toolBar.addSeparator();
+        toolBar.addSeparator(fualtDiv);
 
         italicButton = new Nbutton(italicIcon);
         italicButton.setToolTipText("Italic");
         italicButton.addActionListener(this);
         toolBar.add(italicButton);
-        //toolBar.addSeparator();
+        toolBar.addSeparator(fualtDiv);
+
+        clearButton = new Nbutton(clearIcon);
+        clearButton.setToolTipText("Clear All");
+        clearButton.addActionListener(this);
+        toolBar.add(clearButton);
+        toolBar.addSeparator(fualtDiv);
+
+        formatButton = new Nbutton(formatIcon);
+        formatButton.setToolTipText("Format");
+        formatButton.addActionListener(this);
+        toolBar.add(formatButton);
+        toolBar.addSeparator(fualtDiv);
+
+        undoButton = new Nbutton(undoIcon);
+        undoButton.setToolTipText("Undo");
+        toolBar.add(undoButton);
+        toolBar.addSeparator(fualtDiv);
+
+        redoButton = new Nbutton(redoIcon);
+        redoButton.setToolTipText("Redo");
+        toolBar.add(redoButton);
+        toolBar.addSeparator(fualtDiv);
+
+        searchButton = new Nbutton(searchIcon);
+        searchButton.setToolTipText("Search and Replace");
+        searchButton.addActionListener(this);
+        toolBar.add(searchButton);
+        toolBar.addSeparator(bigDiv);
+
+        // system tools
+        setButton = new Nbutton(setIcon);
+        setButton.setToolTipText("Setting");
+        setButton.addActionListener(this);
+        toolBar.add(setButton);
+        toolBar.addSeparator(fualtDiv);
+
+        closeButton = new Nbutton(closeIcon);
+        closeButton.setToolTipText("Quit");
+        closeButton.addActionListener(this);
+        toolBar.add(closeButton);
+        toolBar.addSeparator(bigDiv);
+
+        // about tools
+        aboutMeButton = new Nbutton(aboutMeIcon);
+        aboutMeButton.setToolTipText("About Me");
+        aboutMeButton.addActionListener(this);
+        toolBar.add(aboutMeButton);
+        toolBar.addSeparator(fualtDiv);
+
+        aboutButton = new Nbutton(aboutIcon);
+        aboutButton.setToolTipText("About NotePad PH");
+        aboutButton.addActionListener(this);
+        toolBar.add(aboutButton);
+        toolBar.addSeparator(bigDiv);
+
+
 
 
         //bottom
@@ -303,17 +331,19 @@ public class UI extends JFrame implements ActionListener {
         search.add(quickFind);
 
         // setting part
-
+        seting.addActionListener(this);
+        aboutMe.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F1, 0));
+        setting.add(seting);
 
         // about part
         // About Me
         aboutMe.addActionListener(this);
-        aboutMe.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F1, 0));
+        aboutMe.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F2, 0));
         about.add(aboutMe);
 
         // About Software
         aboutSoftware.addActionListener(this);
-        aboutSoftware.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F2, 0));
+        aboutSoftware.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F3, 0));
         about.add(aboutSoftware);
 
 
@@ -359,15 +389,9 @@ public class UI extends JFrame implements ActionListener {
         });
         // undo and redo part
         Undo.undoManuInit(edit, undoIcon, redoIcon);
-        undoButton = new Nbutton(undoIcon);
-        undoButton.setToolTipText("Undo");
-        redoButton = new Nbutton(redoIcon);
-        redoButton.setToolTipText("Redo");
         Undo.UndoButtonInit(undoButton, redoButton, textArea);
         // autocomplete
-        AutoComplete autoComplete = new AutoComplete(this,new ArrayList<String>(Arrays.asList(supportedKeywords.getAll())));
-
-
+        //AutoComplete autoComplete = new AutoComplete(this,new ArrayList<String>(Arrays.asList(supportedKeywords.getAll())));
     }
 
     private void updateBottom(int lineset, int clomnset) {
@@ -387,10 +411,11 @@ public class UI extends JFrame implements ActionListener {
         else if (e.getSource() == boldButton) boldFontFunction();
         else if (e.getSource() == italicButton) italicFontFunction();
         else if (e.getSource() == clearFile || e.getSource() == clearButton) clearFileFunction();
-        else if (e.getSource() == quickFind || e.getSource() == quickButton) new FindWord(textArea);
+        else if (e.getSource() == quickFind || e.getSource() == searchButton) new FindWord(textArea);
         else if (e.getSource() == format || e.getSource() == formatButton) Format.format(textArea);
-        //else if (e.getSource() == aboutMe || e.getSource() == aboutMeButton) new About(this).me();
-        //else if (e.getSource() == aboutSoftware || e.getSource() == aboutButton) new About(this).software();
+        else if (e.getSource() == seting || e.getSource() == setButton) new Setting(textArea);
+        else if (e.getSource() == aboutMe || e.getSource() == aboutMeButton) new About(this).me();
+        else if (e.getSource() == aboutSoftware || e.getSource() == aboutButton) new About(this).software();
 
     }
 
