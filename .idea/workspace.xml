@@ -1,43 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="361ec5c4-9e71-4be0-8af3-99ec8f5e7b3f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/icons/about.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/about_me.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/bold.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/clear.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/copy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/cut.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/italic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/new.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/open.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/paste.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/save.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/selectall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/ste.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/wordwrap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SimpleEditor/ClearAll.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SimpleEditor/Format.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SimpleEditor/LineNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SimpleEditor/SimpleEditor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SimpleEditor/UI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SimpleEditor/Undo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="097bbac4-a84e-42fe-b2b2-5b0ab494b9a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/SimpleEditor/Nbutton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimpleEditor/AutoComplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleEditor/AutoComplete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimpleEditor/HighLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleEditor/HighLight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/about.png" beforeDir="false" afterPath="$PROJECT_DIR$/icons/about.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/about_me.png" beforeDir="false" afterPath="$PROJECT_DIR$/icons/about_me.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/bold.png" beforeDir="false" afterPath="$PROJECT_DIR$/icons/bold.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/clear.png" beforeDir="false" afterPath="$PROJECT_DIR$/icons/clear.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/icons/close.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/copy.png" beforeDir="false" afterPath="$PROJECT_DIR$/icons/copy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/cut.png" beforeDir="false" afterPath="$PROJECT_DIR$/icons/cut.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/italic.png" beforeDir="false" afterPath="$PROJECT_DIR$/icons/italic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/new.png" beforeDir="false" afterPath="$PROJECT_DIR$/icons/new.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/open.png" beforeDir="false" afterPath="$PROJECT_DIR$/icons/open.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/paste.png" beforeDir="false" afterPath="$PROJECT_DIR$/icons/paste.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/save.png" beforeDir="false" afterPath="$PROJECT_DIR$/icons/save.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/search.png" beforeDir="false" afterPath="$PROJECT_DIR$/icons/search.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/selectall.png" beforeDir="false" afterPath="$PROJECT_DIR$/icons/selectall.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/ste.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/wordwrap.png" beforeDir="false" afterPath="$PROJECT_DIR$/icons/wordwrap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete$CommitAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete$CompletionTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete$HandleBracketEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete$Mode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete$Mode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/ClearAll.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/ClearAll.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Format.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Format.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/LineNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/LineNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/SimpleEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/SimpleEditor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/SupportedKeywords.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/SupportedKeywords.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/UI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/UI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/UI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/UI$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/UI$SelectAllAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/UI$SelectAllAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/UI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/UI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Undo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Undo$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Undo$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Undo$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Undo$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Undo$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Undo$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Undo$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Undo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Undo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleEditor/LineNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleEditor/LineNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleEditor/SimpleEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleEditor/SimpleEditor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java" afterDir="false" />
-=======
-    <list default="true" id="361ec5c4-9e71-4be0-8af3-99ec8f5e7b3f" name="Default" comment="Add some notation and change the structure">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SimpleEditor/SimpleEditor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SimpleEditor/HighLight.java" afterPath="$PROJECT_DIR$/src/SimpleEditor/HighLight.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java" afterPath="$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java" />
->>>>>>> f6fcf86eb8d9c694ca54c8820425cde5810ea527
+      <change beforePath="$PROJECT_DIR$/src/SimpleEditor/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleEditor/UI.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,150 +54,103 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-<<<<<<< HEAD
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/AutoComplete.java">
+        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/UI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2044">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="604">
+              <caret line="365" column="58" selection-start-line="365" selection-start-column="58" selection-end-line="365" selection-end-column="58" />
               <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-=======
-      <file leaf-file-name="FindWord.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/FindWord.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="84" column="29" lean-forward="false" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#10599#10903#0" expanded="true" />
+                <element signature="e#10902#10903#0" expanded="true" />
+                <element signature="e#17313#17314#0" expanded="true" />
+                <element signature="e#17344#17345#0" expanded="true" />
+                <element signature="e#19248#19249#0" expanded="true" />
+                <element signature="e#19279#19280#0" expanded="true" />
+                <element signature="e#19697#19698#0" expanded="true" />
+                <element signature="e#19741#19742#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleEditor.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Nbutton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Trie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2772">
+              <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SimpleEditor/SimpleEditor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-              <folding />
->>>>>>> f6fcf86eb8d9c694ca54c8820425cde5810ea527
+            <state relative-caret-position="396">
+              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+              <folding>
+                <element signature="e#247#248#0" expanded="true" />
+                <element signature="e#287#288#0" expanded="true" />
+              </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/icons/about.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/icons/about_me.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/icons/clear.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/UI.java">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="504">
-              <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#9901#10203#0" expanded="true" />
-                <element signature="e#10202#10203#0" expanded="true" />
-                <element signature="e#14116#14117#0" expanded="true" />
-                <element signature="e#14147#14148#0" expanded="true" />
-=======
-            <state relative-caret-position="440">
-              <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#446#447#0" expanded="true" />
-                <element signature="e#488#489#0" expanded="true" />
-                <element signature="e#719#720#0" expanded="true" />
-                <element signature="e#747#748#0" expanded="true" />
->>>>>>> f6fcf86eb8d9c694ca54c8820425cde5810ea527
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Format.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3348">
-              <caret line="53" column="39" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
-=======
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-              <folding />
->>>>>>> f6fcf86eb8d9c694ca54c8820425cde5810ea527
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Undo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="31" column="87" selection-start-line="31" selection-start-column="87" selection-end-line="31" selection-end-column="87" />
-=======
-      <file leaf-file-name="SupportedKeywords.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-567">
-              <caret line="41" column="39" lean-forward="false" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+            <state relative-caret-position="383">
+              <caret line="89" column="19" lean-forward="true" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4131#4132#0" expanded="true" />
-                <element signature="e#4189#4190#0" expanded="true" />
-                <element signature="e#4238#4239#0" expanded="true" />
-                <element signature="e#4271#4272#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AutoComplete.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/AutoComplete.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1496">
-              <caret line="68" column="19" lean-forward="false" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
->>>>>>> f6fcf86eb8d9c694ca54c8820425cde5810ea527
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1045#1053#0" expanded="true" />
+                <element signature="e#3288#3289#0" expanded="true" />
+                <element signature="e#3315#3316#0" expanded="true" />
+                <element signature="e#3346#3347#0" expanded="true" />
+                <element signature="e#3372#3373#0" expanded="true" />
+                <element signature="e#3453#3461#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/SimpleEditor.java">
+        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/AutoComplete.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="1175">
+              <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
               <folding>
-                <element signature="e#94#95#0" expanded="true" />
-                <element signature="e#135#136#0" expanded="true" />
+                <element signature="class#1387:1536" />
+                <element signature="e#1450#1451#0" expanded="true" />
+                <element signature="e#1529#1530#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/HighLight.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -198,7 +158,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2052" />
+            <state relative-caret-position="10836">
+              <caret line="309" column="32" selection-start-line="309" selection-start-column="32" selection-end-line="309" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/LineNumber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1320#1321#0" expanded="true" />
+                <element signature="e#1345#1346#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -213,76 +189,80 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mainToolbar</find>
-      <find>toolbar</find>
+      <find>font</find>
+      <find>JButton</find>
+      <find>toolBar</find>
+      <find>nowRowWidth</find>
+      <find>ste.png</find>
+      <find>Listener</find>
+      <find>Color</find>
+      <find>Font</find>
+      <find>setFont</find>
+      <find>high</find>
     </findStrings>
     <replaceStrings>
-      <replace>toolBar</replace>
+      <replace>Nbutton</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>F:\software\java_finnalhw\SimpleEditor\icons</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Adam &lt;jokmingwong@gmail.com&gt;" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="PUSH_TAGS">
-      <GitPushTagMode />
-    </option>
-    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/SimpleEditor/HightLight.java" />
-        <option value="$PROJECT_DIR$/src/SimpleEditor/FindWord.java" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/src/SimpleEditor/UI.form" />
-        <option value="$PROJECT_DIR$/src/SimpleEditor/HighLight.java" />
-        <option value="$PROJECT_DIR$/src/SimpleEditor/Undo.java" />
         <option value="$PROJECT_DIR$/src/SimpleEditor/SimpleEditor.java" />
-        <option value="$PROJECT_DIR$/src/SimpleEditor/AutoComplete.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/SimpleEditor/Nbutton.java" />
+        <option value="$PROJECT_DIR$/src/SimpleEditor/LineNumber.java" />
         <option value="$PROJECT_DIR$/src/SimpleEditor/UI.java" />
-=======
-        <option value="$PROJECT_DIR$/src/SimpleEditor/AutoComplete.java" />
-        <option value="$PROJECT_DIR$/src/SimpleEditor/SimpleEditor.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/SimpleEditor/HighLight.java" />
         <option value="$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java" />
->>>>>>> f6fcf86eb8d9c694ca54c8820425cde5810ea527
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-<<<<<<< HEAD
-    <option name="x" value="1878" />
-    <option name="width" value="689" />
-    <option name="height" value="1417" />
-=======
-    <option name="x" value="-10" />
-    <option name="y" value="46" />
-    <option name="width" value="980" />
-    <option name="height" value="1044" />
->>>>>>> f6fcf86eb8d9c694ca54c8820425cde5810ea527
+  <component name="ProjectFrameBounds">
+    <option name="x" value="91" />
+    <option name="y" value="99" />
+    <option name="width" value="2485" />
+    <option name="height" value="1461" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-<<<<<<< HEAD
       <pane id="PackagesPane" />
-=======
-      <pane id="Scratches" />
->>>>>>> f6fcf86eb8d9c694ca54c8820425cde5810ea527
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="SimpleEditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleEditor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleEditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleEditor" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleEditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleEditor" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleEditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleEditor" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleEditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleEditor" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
               <item name="SimpleEditor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -300,33 +280,12 @@
           <select />
         </subPane>
       </pane>
-<<<<<<< HEAD
-=======
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
->>>>>>> f6fcf86eb8d9c694ca54c8820425cde5810ea527
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="324" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559795009881" />
-    <property name="last_opened_file_path" value="D:/study/软院的日子里/大二下/JAVA/EDITOR/Simple-Java-Text-Editor-master" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="web.server" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\software\java_finnalhw\SimpleEditor" />
-      <recent name="F:\software\java_finnalhw\SimpleEditor\src" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\software\java_finnalhw\SimpleEditor\src\SimpleEditor" />
-      <recent name="F:\software\java_finnalhw\SimpleEditor\src" />
-    </key>
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560009444718" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -340,17 +299,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SimpleEditor">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="SimpleEditor" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="SimpleEditor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SimpleEditor.SimpleEditor" />
       <module name="SimpleEditor" />
@@ -375,392 +324,57 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="361ec5c4-9e71-4be0-8af3-99ec8f5e7b3f" name="Default" comment="" />
-      <created>1559180081833</created>
+      <changelist id="097bbac4-a84e-42fe-b2b2-5b0ab494b9a1" name="Default Changelist" comment="" />
+      <created>1559985020742</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1559180081833</updated>
-      <workItem from="1559180086726" duration="14177000" />
-      <workItem from="1559270469770" duration="2538000" />
-      <workItem from="1559281454237" duration="2622000" />
-<<<<<<< HEAD
-      <workItem from="1559481315422" duration="328000" />
-      <workItem from="1559547677483" duration="3867000" />
-      <workItem from="1559783988506" duration="10363000" />
-=======
-      <workItem from="1559481315422" duration="395000" />
-      <workItem from="1559551153078" duration="6886000" />
-      <workItem from="1559628845182" duration="3876000" />
->>>>>>> f6fcf86eb8d9c694ca54c8820425cde5810ea527
+      <updated>1559985020742</updated>
+      <workItem from="1559985022312" duration="18777000" />
     </task>
-    <task id="LOCAL-00001" summary="Add content about file FindWord.java and PJNB LNNB!">
-      <created>1559215278846</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1559215278846</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Add a little function declare about file HighLight.java!">
-      <created>1559216120289</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1559216120289</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Update and finish the HighLight.java">
-      <created>1559272189717</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1559272189718</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Update and finish the HighLight.java">
-      <created>1559272293083</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1559272293083</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Fix bug of the  file HighLight.java">
-      <created>1559284035260</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1559284035260</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Fix the name of package of AutoComplete.java">
-      <created>1559481677402</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1559481677402</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="33895000" />
-=======
-    <option name="totallyTimeSpent" value="30494000" />
->>>>>>> f6fcf86eb8d9c694ca54c8820425cde5810ea527
+    <option name="totallyTimeSpent" value="18777000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1426" extended-state="6" />
+    <frame x="91" y="99" width="2485" height="1461" extended-state="0" />
     <editor active="true" />
     <layout>
-<<<<<<< HEAD
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.090222575" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32972136" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17814434" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" weight="0.33636364" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32969603" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32972136" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32102486" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Statistic" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.46629214" side_tool="true" weight="0.32919255" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.53370786" weight="0.32817337" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="right" id="Maven" order="9" />
-=======
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.46629214" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33170134" sideWeight="0.53370786" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
->>>>>>> f6fcf86eb8d9c694ca54c8820425cde5810ea527
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add content about file find word" />
-    <MESSAGE value="Add content about file FindWord.java and PJNB LNNB!" />
-    <MESSAGE value="Add a little function declare about file HighLight.java!" />
-    <MESSAGE value="Update and finish the HighLight.java" />
-    <MESSAGE value="Fix buf of the  file HighLight.java" />
-    <MESSAGE value="Fix bug of the  file HighLight.java" />
-    <MESSAGE value="Fix the name of package of AutoComplete.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix the name of package of AutoComplete.java" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/description.html">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state>
-          <caret column="50" selection-start-column="50" selection-end-column="50" />
-=======
-        <state relative-caret-position="1804">
-          <caret line="84" column="29" lean-forward="false" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/SimpleEditor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="49" lean-forward="false" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="46" column="7" lean-forward="true" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4131#4132#0" expanded="true" />
-            <element signature="e#4189#4190#0" expanded="true" />
-            <element signature="e#4238#4239#0" expanded="true" />
-            <element signature="e#4271#4272#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/AutoComplete.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="68" column="19" lean-forward="true" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/HighLight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/FindWord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/HighLight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/AutoComplete.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/FindWord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
->>>>>>> f6fcf86eb8d9c694ca54c8820425cde5810ea527
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/UI.form" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/FindWord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="146" column="36" lean-forward="true" selection-start-line="146" selection-start-column="36" selection-end-line="146" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/icons/ste.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/ClearAll.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-<<<<<<< HEAD
-            <element signature="e#181#182#0" expanded="true" />
-            <element signature="e#217#218#0" expanded="true" />
-=======
-            <element signature="imports" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
->>>>>>> f6fcf86eb8d9c694ca54c8820425cde5810ea527
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/LineNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/HighLight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2376">
-          <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-<<<<<<< HEAD
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-=======
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
->>>>>>> f6fcf86eb8d9c694ca54c8820425cde5810ea527
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -768,240 +382,101 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleEditor.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2052" />
-=======
-    <entry file="file://$PROJECT_DIR$/.idea/description.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="50" lean-forward="false" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
+        <state relative-caret-position="10836">
+          <caret line="309" column="32" selection-start-line="309" selection-start-column="32" selection-end-line="309" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/FindWord.java">
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Nbutton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="84" column="29" lean-forward="false" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
->>>>>>> f6fcf86eb8d9c694ca54c8820425cde5810ea527
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/AutoComplete.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2044">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/icons/about.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/icons/about_me.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/icons/clear.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/SimpleEditor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#94#95#0" expanded="true" />
-            <element signature="e#135#136#0" expanded="true" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/AutoComplete.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1496">
-          <caret line="68" column="19" lean-forward="false" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
->>>>>>> f6fcf86eb8d9c694ca54c8820425cde5810ea527
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Undo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="31" column="87" selection-start-line="31" selection-start-column="87" selection-end-line="31" selection-end-column="87" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Format.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3348">
-          <caret line="53" column="39" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-          <folding />
+        <state relative-caret-position="612">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SimpleEditor/SimpleEditor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding />
->>>>>>> f6fcf86eb8d9c694ca54c8820425cde5810ea527
+        <state relative-caret-position="396">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding>
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Trie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2772">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/HighLight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/LineNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1320#1321#0" expanded="true" />
+            <element signature="e#1345#1346#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/AutoComplete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1175">
+          <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+          <folding>
+            <element signature="class#1387:1536" />
+            <element signature="e#1450#1451#0" expanded="true" />
+            <element signature="e#1529#1530#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SimpleEditor/UI.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="504">
-          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        <state relative-caret-position="604">
+          <caret line="365" column="58" selection-start-line="365" selection-start-column="58" selection-end-line="365" selection-end-column="58" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#9901#10203#0" expanded="true" />
-            <element signature="e#10202#10203#0" expanded="true" />
-            <element signature="e#14116#14117#0" expanded="true" />
-            <element signature="e#14147#14148#0" expanded="true" />
-=======
-        <state relative-caret-position="440">
-          <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
->>>>>>> f6fcf86eb8d9c694ca54c8820425cde5810ea527
+            <element signature="e#10599#10903#0" expanded="true" />
+            <element signature="e#10902#10903#0" expanded="true" />
+            <element signature="e#17313#17314#0" expanded="true" />
+            <element signature="e#17344#17345#0" expanded="true" />
+            <element signature="e#19248#19249#0" expanded="true" />
+            <element signature="e#19279#19280#0" expanded="true" />
+            <element signature="e#19697#19698#0" expanded="true" />
+            <element signature="e#19741#19742#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>SimpleEditor</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
-=======
     <entry file="file://$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-567">
-          <caret line="41" column="39" lean-forward="false" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+        <state relative-caret-position="383">
+          <caret line="89" column="19" lean-forward="true" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4131#4132#0" expanded="true" />
-            <element signature="e#4189#4190#0" expanded="true" />
-            <element signature="e#4238#4239#0" expanded="true" />
-            <element signature="e#4271#4272#0" expanded="true" />
+            <element signature="e#1045#1053#0" expanded="true" />
+            <element signature="e#3288#3289#0" expanded="true" />
+            <element signature="e#3315#3316#0" expanded="true" />
+            <element signature="e#3346#3347#0" expanded="true" />
+            <element signature="e#3372#3373#0" expanded="true" />
+            <element signature="e#3453#3461#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
->>>>>>> f6fcf86eb8d9c694ca54c8820425cde5810ea527
   </component>
 </project>

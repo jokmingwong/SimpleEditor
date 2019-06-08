@@ -1,6 +1,8 @@
 package SimpleEditor;
 
 import javax.swing.*;
+import javax.swing.event.CaretEvent;
+import javax.swing.event.CaretListener;
 import javax.swing.text.DefaultEditorKit;
 import java.awt.*;
 import java.awt.event.*;
@@ -8,6 +10,8 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -27,12 +31,14 @@ public class UI extends JFrame implements ActionListener {
             setting = new JMenu("Setting"),
             about = new JMenu("About");
     private final JMenuItem newFile, openFile, saveFile, close, cut, copy, paste, clearFile, selectAll, quickFind,
-            aboutMe, aboutSoftware, wordWrap,format;
-    private final JToolBar toolBar= new JToolBar();
-    private final JButton newButton, openButton, saveButton, clearButton, quickButton, aboutMeButton, aboutButton, closeButton, boldButton, italicButton,undoButton,redoButton,formatButton;
+            aboutMe, aboutSoftware, wordWrap, format;
+    private final JToolBar toolBar = new JToolBar();
+    private final Nbutton openButton, saveButton, clearButton, quickButton, aboutMeButton, aboutButton, closeButton, boldButton, italicButton, undoButton, redoButton, formatButton;
     private final Action selectAllAction;
+    private final Nbutton newButton;
 
     //icons
+    private final ImageIcon titleIcon = new ImageIcon("icons/main.png");
     private final ImageIcon boldIcon = new ImageIcon("icons/bold.png");
     private final ImageIcon italicIcon = new ImageIcon("icons/italic.png");
 
@@ -62,27 +68,45 @@ public class UI extends JFrame implements ActionListener {
 
     //more function support
     private SupportedKeywords supportedKeywords = new SupportedKeywords();
-    private HighLight highLight = new HighLight(Color.GRAY);
+    private HighLight highLight = new HighLight(new Color(255, 219, 138));
     private AutoComplete autocomplete;
     private boolean hasListener = false;
     private boolean canEdit = false;
 
+
+    //bottom info
+    private final JLabel lineCount = new JLabel("Lines:0");
+    private final JLabel lengthCount = new JLabel("Length:0");
+    private final JLabel nowLine = new JLabel("nowLine:0");
+    private final JLabel nowCol = new JLabel("nowCol:0");
+    private Font daultMenuFont = new Font("黑体", Font.PLAIN, 18);
+
     public UI() throws HeadlessException {
+
+        /* page main consist */
         setTitle("SimpleEditor");
         setSize(1280, 720);
+        setIconImage(titleIcon.getImage());
         setLocationRelativeTo(null);
-        /* page main consist */
+        setBackground(new Color(255, 255, 255));
 
         // menus
+        file.setFont(daultMenuFont);
+        edit.setFont(daultMenuFont);
+        search.setFont(daultMenuFont);
+        about.setFont(daultMenuFont);
+        setting.setFont(daultMenuFont);
         menuBar.add(file);
         menuBar.add(edit);
         menuBar.add(search);
         menuBar.add(setting);
         menuBar.add(about);
+        menuBar.setBackground(Color.white);
         setJMenuBar(menuBar);
 
+
         //init textarea
-        textArea.setFont(new Font("Century Gothic", Font.PLAIN, 12));
+        textArea.setFont(new Font("黑体", Font.PLAIN, 22));
         textArea.setTabSize(2);
         textArea.setLineWrap(true);
         textArea.setWrapStyleWord(true);
@@ -104,77 +128,93 @@ public class UI extends JFrame implements ActionListener {
         quickFind = new JMenuItem("Quick", searchIcon);
         aboutMe = new JMenuItem("About Me", aboutMeIcon);
         aboutSoftware = new JMenuItem("About Software", aboutIcon);
-        format = new JMenuItem("Format",formatIcon);
+        format = new JMenuItem("Format", formatIcon);
 
         //tools bar
         this.add(toolBar, BorderLayout.NORTH);
+        toolBar.setFloatable(false);
+        toolBar.setBackground(Color.white);
         // used to create space between button groups
-        newButton = new JButton(newIcon);
+        newButton = new Nbutton(newIcon);
         newButton.setToolTipText("New");
         newButton.addActionListener(this);
         toolBar.add(newButton);
         toolBar.addSeparator();
 
-        openButton = new JButton(openIcon);
+        openButton = new Nbutton(openIcon);
         openButton.setToolTipText("Open");
         openButton.addActionListener(this);
         toolBar.add(openButton);
         toolBar.addSeparator();
 
-        saveButton = new JButton(saveIcon);
+        saveButton = new Nbutton(saveIcon);
         saveButton.setToolTipText("Save");
         saveButton.addActionListener(this);
         toolBar.add(saveButton);
         toolBar.addSeparator();
 
-        clearButton = new JButton(clearIcon);
+        clearButton = new Nbutton(clearIcon);
         clearButton.setToolTipText("Clear All");
         clearButton.addActionListener(this);
         toolBar.add(clearButton);
         toolBar.addSeparator();
 
-        formatButton = new JButton(formatIcon);
+        formatButton = new Nbutton(formatIcon);
         formatButton.setToolTipText("Format");
         formatButton.addActionListener(this);
         toolBar.add(formatButton);
         toolBar.addSeparator();
 
-        quickButton = new JButton(searchIcon);
+        quickButton = new Nbutton(searchIcon);
         quickButton.setToolTipText("Quick Search");
         quickButton.addActionListener(this);
         toolBar.add(quickButton);
         toolBar.addSeparator();
 
-        aboutMeButton = new JButton(aboutMeIcon);
+        aboutMeButton = new Nbutton(aboutMeIcon);
         aboutMeButton.setToolTipText("About Me");
         aboutMeButton.addActionListener(this);
         toolBar.add(aboutMeButton);
         toolBar.addSeparator();
 
-        aboutButton = new JButton(aboutIcon);
+        aboutButton = new Nbutton(aboutIcon);
         aboutButton.setToolTipText("About NotePad PH");
         aboutButton.addActionListener(this);
         toolBar.add(aboutButton);
         toolBar.addSeparator();
 
-        closeButton = new JButton(closeIcon);
+        closeButton = new Nbutton(closeIcon);
         closeButton.setToolTipText("Quit");
         closeButton.addActionListener(this);
         toolBar.add(closeButton);
         toolBar.addSeparator();
 
-        boldButton = new JButton(boldIcon);
+        boldButton = new Nbutton(boldIcon);
         boldButton.setToolTipText("Bold");
         boldButton.addActionListener(this);
         toolBar.add(boldButton);
         toolBar.addSeparator();
 
-        italicButton = new JButton(italicIcon);
+        italicButton = new Nbutton(italicIcon);
         italicButton.setToolTipText("Italic");
         italicButton.addActionListener(this);
         toolBar.add(italicButton);
         //toolBar.addSeparator();
 
+
+        //bottom
+        JPanel bottomInfo = new JPanel();
+        bottomInfo.add(lineCount);
+        bottomInfo.add(Box.createHorizontalStrut(60));
+        bottomInfo.add(lengthCount);
+        bottomInfo.add(Box.createHorizontalStrut(200));
+        bottomInfo.add(nowLine);
+        bottomInfo.add(Box.createHorizontalStrut(60));
+        bottomInfo.add(nowCol);
+        updateBottom(0, 0);
+        bottomInfo.setBackground(new Color(220, 225, 223));
+        bottomInfo.setSize(new Dimension(this.getWidth(), 8));
+        panel.add(bottomInfo, BorderLayout.SOUTH);
 
 
         /* actions set */
@@ -265,7 +305,6 @@ public class UI extends JFrame implements ActionListener {
         // setting part
 
 
-
         // about part
         // About Me
         aboutMe.addActionListener(this);
@@ -290,6 +329,20 @@ public class UI extends JFrame implements ActionListener {
                 highLight.paint(textArea, supportedKeywords.getJavaKeywords());
             }
         });
+        // now lines show
+        textArea.addCaretListener(new CaretListener() {
+            public void caretUpdate(CaretEvent e) {
+                try {
+                    //e.getDot() 获得插入符的位置。
+                    int offset = e.getDot();
+                    int row = textArea.getLineOfOffset(offset);
+                    int column = e.getDot() - textArea.getLineStartOffset(row);
+                    updateBottom(row, column);
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
         //line wrap
         wordWrap.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ev) {
@@ -304,17 +357,24 @@ public class UI extends JFrame implements ActionListener {
                 }
             }
         });
-        //undo part
-        Undo.undoManuInit(edit,undoIcon,redoIcon);
-        undoButton = new JButton(undoIcon);
+        // undo and redo part
+        Undo.undoManuInit(edit, undoIcon, redoIcon);
+        undoButton = new Nbutton(undoIcon);
         undoButton.setToolTipText("Undo");
-        redoButton = new JButton(redoIcon);
+        redoButton = new Nbutton(redoIcon);
         redoButton.setToolTipText("Redo");
-        Undo.UndoButtonInit(undoButton,redoButton,textArea);
+        Undo.UndoButtonInit(undoButton, redoButton, textArea);
+        // autocomplete
+        AutoComplete autoComplete = new AutoComplete(this,new ArrayList<String>(Arrays.asList(supportedKeywords.getAll())));
 
 
+    }
 
-
+    private void updateBottom(int lineset, int clomnset) {
+        lineCount.setText("Lines:" + textArea.getLineCount());
+        lengthCount.setText("Length:" + textArea.getText().length());
+        nowLine.setText("nowLine:" + lineset);
+        nowCol.setText("nowCol:" + clomnset);
 
     }
 
@@ -328,7 +388,7 @@ public class UI extends JFrame implements ActionListener {
         else if (e.getSource() == italicButton) italicFontFunction();
         else if (e.getSource() == clearFile || e.getSource() == clearButton) clearFileFunction();
         else if (e.getSource() == quickFind || e.getSource() == quickButton) new FindWord(textArea);
-        else if (e.getSource() == format || e.getSource() == formatButton)Format.format(textArea);
+        else if (e.getSource() == format || e.getSource() == formatButton) Format.format(textArea);
         //else if (e.getSource() == aboutMe || e.getSource() == aboutMeButton) new About(this).me();
         //else if (e.getSource() == aboutSoftware || e.getSource() == aboutButton) new About(this).software();
 
@@ -403,7 +463,7 @@ public class UI extends JFrame implements ActionListener {
             ClearAll.clear(textArea); // clear the TextArea before applying the file contents
             try {
                 File openFile = open.getSelectedFile();
-                setTitle(openFile.getName() + " | 打开文件" );
+                setTitle(openFile.getName() + " | 打开文件");
                 Scanner scan = new Scanner(new FileReader(openFile.getPath()));
                 while (scan.hasNext()) {
                     textArea.append(scan.nextLine() + "\n");
@@ -438,6 +498,10 @@ public class UI extends JFrame implements ActionListener {
         }
     }
 
+    public JTextArea getEditor() {
+        return textArea;
+    }
+
 
     class SelectAllAction extends AbstractAction {
         private static final long serialVersionUID = 1L;
@@ -451,6 +515,7 @@ public class UI extends JFrame implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             textArea.selectAll();
         }
+
     }
 
 

@@ -1,9 +1,8 @@
 package SimpleEditor;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+
+import static com.sun.xml.internal.stream.writers.WriterUtility.SPACE;
 
 /**
  * <h1>A class to store the programming language keywords and
@@ -82,6 +81,13 @@ public class SupportedKeywords {
 
     public String[] getCppKeywords() {
         return cpp;
+    }
+
+    public static String[] getAll() {
+        HashSet<String> set = new HashSet<String>(Arrays.asList(cpp));
+        set.addAll(Arrays.asList(java));
+        String[] ret = set.toArray(new String[set.size()]);
+        return ret;
     }
 
     public ArrayList<String> getBracketCompletions() {

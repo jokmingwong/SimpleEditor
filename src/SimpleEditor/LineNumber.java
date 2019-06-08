@@ -24,13 +24,13 @@ import java.awt.Rectangle;
 public class LineNumber extends javax.swing.JComponent {
 
 	private static final long serialVersionUID = 1L;
-	public final Color D_BACKGROUD = new Color(228, 228, 228);
-	private final Font D_FONT = new Font(Font.MONOSPACED, Font.PLAIN, 11);
+	public final Color D_BACKGROUD = new Color(220, 225, 214);
+	private final Font D_FONT = new Font("黑体", Font.PLAIN, 22);
 	public final Color D_FOREGROUD = Color.BLACK;
 	private int fontLineHeight;
 	private FontMetrics fontMetrics;
 	private int lineHeight;
-	public final int MARGIN = 5;
+	public final int MARGIN = 2;
 	public final int maxHEIGHT = Integer.MAX_VALUE - 999999;
 	private int nowRowWidth;
 	private final int STARTOFFSET = 4;
