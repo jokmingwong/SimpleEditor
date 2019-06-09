@@ -385,7 +385,7 @@ public class UI extends JFrame implements ActionListener {
         Undo.undoManuInit(edit, undoIcon, redoIcon);
         Undo.UndoButtonInit(undoButton, redoButton, textArea);
         // autocomplete
-        //AutoComplete autoComplete = new AutoComplete(this,new ArrayList<String>(Arrays.asList(supportedKeywords.getAll())));
+        autocomplete = new AutoComplete(this,new ArrayList<String>(Arrays.asList(supportedKeywords.getAll())));
     }
 
     private void updateBottom(int lineset, int clomnset) {
@@ -528,7 +528,7 @@ public class UI extends JFrame implements ActionListener {
                     textArea.append(scan.nextLine() + "\n");
                 }
 
-                //enableAutoComplete(openFile);
+                AutoComplete.enableAutoComplete(autocomplete);
             } catch (Exception ex) { // catch any exceptions, and...
                 // ...write to the debug console
                 System.err.println(ex.getMessage());
@@ -612,7 +612,7 @@ public class UI extends JFrame implements ActionListener {
                 out.write(textArea.getText());
                 out.close();
 
-                //enableAutoComplete(openFile);
+                AutoComplete.enableAutoComplete(autocomplete);
                 canEdit = false;
             } catch (Exception ex) { // again, catch any exceptions and...
                 // ...write to the debug console

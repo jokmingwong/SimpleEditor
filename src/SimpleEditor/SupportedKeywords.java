@@ -110,4 +110,8 @@ public class SupportedKeywords {
         return bracketMap;
     }
 
+    public static Set<String> getSpaceSet() {
+        return spaceSet;
+    }
+
 }
