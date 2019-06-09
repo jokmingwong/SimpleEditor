@@ -1,11 +1,17 @@
 package SimpleEditor;
 
-/**
+
+/*
+ * LineNumber.java
  * @author LiNan
- *设置行号 UI中请在JScrollPane scrollPane = new JScrollPane(textArea);后加入
+ *设置行号
+ *UI中请在
+ *JScrollPane scrollPane = new JScrollPane(textArea);
+ *后加入
  *LineNumber lineNumber = new LineNumber();
  *scrollPane.setRowHeaderView(lineNumber);
- *更改字体的fontType.addActionListener(里面也要改  目前是加一句lineNumber.setFont(new Font(p, Font.PLAIN, s));
+ *更改字体的fontType.addActionListener(里面也要改  目前是加一句
+ *lineNumber.setFont(new Font(p, Font.PLAIN, s));
  *下面更改字号的fontSize.addActionListener(同理
  * */
 
@@ -20,55 +26,49 @@ public class LineNumber extends javax.swing.JComponent {
 
 	private static final long serialVersionUID = 1L;
 	public final Color D_BACKGROUD = new Color(220, 225, 214);
-	private final Font D_FONT = new Font("黑体", Font.BOLD, 22);
 	public final Color D_FOREGROUD = Color.BLACK;
-	private int fontLineHeight;
-	private FontMetrics fontMetrics;
-	private int lineHeight;
+	private final Font D_FONT = new Font("黑体", Font.BOLD, 22);
 	public final int MARGIN = 3;
 	public final int maxHEIGHT = Integer.MAX_VALUE - 999999;
-	private int nowRowWidth;
 	private final int STARTOFFSET = 4;
+	private FontMetrics fontMetrics;
+	private int lineHeight;
+	private int rowWidth;
 
 	public LineNumber() {
 		setFont(D_FONT);
 		setForeground(D_FOREGROUD);
 		setBackground(D_BACKGROUD);
-		setPreferredSize(9999);
+		setSize("8192");
 	}
 
 	public int getLineHeight() {
-		if (lineHeight == 0) {
-			return fontLineHeight;
-		}
-		return lineHeight;
-	}
-
-	public int getStartOffset() {
-		return STARTOFFSET;
-	}
+        if (lineHeight <= 0) {
+            return fontMetrics.getHeight();
+        }
+        return lineHeight;
+    }
 
 	@Override
-	protected void paintComponent(Graphics g) {
-		int nowLineHeight = getLineHeight();
-		int nowStartOffset = getStartOffset();
-		Rectangle drawHere = g.getClipBounds();
-		g.setColor(getBackground());
-		g.fillRect(drawHere.x, drawHere.y, drawHere.width, drawHere.height);
-		g.setColor(getForeground());
-		g.setFont(D_FONT);
-		int startLineNum = (drawHere.y / nowLineHeight) + 1;
-		int endLineNum = startLineNum + (drawHere.height / nowLineHeight);
-		int start = (drawHere.y / nowLineHeight) * nowLineHeight + nowLineHeight - nowStartOffset;
-		for (int i = startLineNum; i <= endLineNum; ++i) {
+	protected void paintComponent(Graphics graphics) {
+		graphics.setColor(getBackground());
+		Rectangle rectangle = graphics.getClipBounds();
+		graphics.fillRect(rectangle.x, rectangle.y, rectangle.width, rectangle.height);
+		graphics.setColor(getForeground());
+		graphics.setFont(D_FONT);//如果要更改字体请注释掉此句
+		int nowheight = getLineHeight();
+		int beginLine = (rectangle.y / nowheight) + 1;
+		int endLine = beginLine + (rectangle.height / nowheight);
+		int where = beginLine * nowheight - STARTOFFSET;
+		for (int i = beginLine; i <= endLine; i++) {
 			String lineNum = String.valueOf(i);
 			int width = fontMetrics.stringWidth(lineNum);
-			g.drawString(lineNum + " ", MARGIN + nowRowWidth - width - 1, start);
-			start += nowLineHeight;
+			graphics.drawString(lineNum + " ", MARGIN + rowWidth - width - 1, where);
+			where += nowheight;
 		}
-		setPreferredSize(endLineNum);
+		setSize(String.valueOf(endLine));
 	}
-
+	
 	/**
 	 * @author Linan
 	 * @param font construct a font by "new Font(name, bold or not bold, int size)"
@@ -77,21 +77,18 @@ public class LineNumber extends javax.swing.JComponent {
 	public void setFont(Font font) {
 		super.setFont(font);
 		fontMetrics = getFontMetrics(getFont());
-		fontLineHeight = fontMetrics.getHeight();
-		setLineHeight(fontLineHeight);
-	}
-
-
-	public void setLineHeight(int lineHeight) {
-		if (lineHeight > 0) {
-			this.lineHeight = lineHeight;
+		int height = fontMetrics.getHeight();
+		if (height  > 0) {
+			this.lineHeight = height;
 		}
 	}
 
-	public void setPreferredSize(int row) {
-		int width = fontMetrics.stringWidth(String.valueOf(row));
-		if (nowRowWidth < width) {
-			nowRowWidth = width;
+
+
+	public void setSize(String row) {
+		int width = fontMetrics.stringWidth(row);
+		if (rowWidth < width) {
+			rowWidth = width;
 			setPreferredSize(new Dimension(2 * MARGIN + width + 1, maxHEIGHT));
 		}
 	}
