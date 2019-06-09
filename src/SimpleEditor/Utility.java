@@ -1,9 +1,8 @@
 package SimpleEditor;
 
 import javax.swing.*;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Set;
+import javax.swing.text.Position;
+import java.util.*;
 
 /**
  * 一个工具类，用于支持 AutoComplete 类的实现
@@ -13,7 +12,9 @@ class Utility {
         return spaceSet;
     }
 
-    private static Set<String> spaceSet = new SupportedKeywords().getSpaceSet();
+    private static Set<String> spaceSet = SupportedKeywords.getSpaceSet();
+
+    private static Map<String, String> brackmap = SupportedKeywords.getBracketMap();
 
     /**
      * 用于寻找结尾在position位置的单词的开头的前一位的位置
@@ -48,6 +49,42 @@ class Utility {
     }
 
 
+    static boolean checkForBracket(JTextArea txtInput, Map<String, String> bracketMap){
+        // 这段代码是用于括号补全的
+        int position = txtInput.getCaretPosition() - 1;
+        String content = txtInput.getText();
+        if(position >= 0) {
+            char c = content.charAt(position);
+            String s = String.valueOf(c);
+
+            if (!isBracketpair(content, position)
+                    && Utility.isBracket(s, bracketMap)) {
+                int start = Utility.getStartOfTypingWord(position, content);
+                txtInput.setText(
+                        Utility.generateNewContext(content,
+                                bracketMap.get(s),
+                                start,
+                                position));
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private static boolean isBracketpair(String content, int position){
+        int len = content.length();
+        if(position + 1 >= len || position < 0){
+            return false;
+        }
+
+        char c = content.charAt(position);
+        String s = String.valueOf(c);
+        char next_c = content.charAt(position+1);
+        String next_s = String.valueOf(next_c);
+        return brackmap.values().contains(s+next_s);
+    }
+
     /**
      * 判断某个字符串是否左括号
      *
@@ -68,7 +105,27 @@ class Utility {
      * @return String数组，包含文本中的所有的单词（单词的界定由空白字符决定）
      */
     static String[] getAllWords(String content) {
-        return content.split("\\s+");
+        String[] words = content.split("[\\s+`1234567890-=\\[\\];',./~!@#$%^&*()+{}|:\"<>?]");
+        ArrayList<String> newWords = new ArrayList<String>();
+        for(String word: words){
+            if(!word.isEmpty()){
+                newWords.add(word);
+            }
+        }
+        return newWords.toArray(new String[0]);
+    }
+
+    static String[] getAllWords(String content, int position) {
+        String[] words = content.split("[\\s+`1234567890-=\\[\\];',./~!@#$%^&*()+{}|:\"<>?]");
+        int len = content.length();
+        position = position >= len ? len : position;
+        ArrayList<String> newWords = new ArrayList<String>();
+        for(String word: words){
+            if(!word.isEmpty()){
+                newWords.add(word);
+            }
+        }
+        return newWords.toArray(new String[0]);
     }
 
     /**
@@ -148,7 +205,7 @@ class Utility {
      * @param caretPosition 光标位置
      * @return 补全文本后的新的总文本
      */
-    private static String generateNewContext(String content, String insertString, int startOfWord, int caretPosition) {
+    static String generateNewContext(String content, String insertString, int startOfWord, int caretPosition) {
         return content.substring(0, startOfWord + 1) +
                 insertString +
                 content.substring(caretPosition);
@@ -168,6 +225,59 @@ class Utility {
         } else {
             return Utility.getSpaceSet().contains(content.substring(position, position + 1));
         }
+    }
+
+    static void updateModel(String content,
+                            ArrayList<String> items,
+                            String prefix,
+                            DefaultComboBoxModel<String> model){
+        // 录入
+        String[] words = Utility.getAllWords(content);
+        TernarySearchTrie<Integer> trie = new TernarySearchTrie<Integer>();
+        for (String word : words) {
+            Integer val = trie.get(word);
+            val = val == null ? 0 : val;
+            trie.put(
+                    word,
+                    val + 1
+            );
+        }
+
+        Map<String, Integer> newItems = new HashMap<>();
+        for (String item : items) {
+            if (item.startsWith(prefix)) {
+                newItems.put(item, (newItems.get(item) == null ? 0 : newItems.get(item)) + 1);
+            }
+        }
+
+        Iterable<String> keys = trie.keysWithPrefix(prefix);
+        for(String key : keys){
+            newItems.put(key, (newItems.get(key) == null ? 0 : newItems.get(key)) + trie.get(key));
+        }
+
+
+        ArrayList<String> Items = updateItem(newItems);
+        for (String item : Items) {
+            if (item.startsWith(prefix)) {
+                model.addElement(item);
+            }
+        }
+    }
+
+    // TODO 将这个方法改造成用于支持 updateList 方法的类，主要用于更新list的内容
+    // 依赖于trie树的词频统计
+    // 统计所有词，然后排序
+    private static ArrayList<String> updateItem(Map<String, Integer> items) {
+        ArrayList<String> Items = new ArrayList<>(items.keySet());
+        Collections.sort(Items, new Comparator<String>() {
+            @Override
+            public int compare(String key1, String key2)
+            {
+
+                return items.get(key2) - items.get(key1);
+            }
+        });
+        return Items;
     }
 
     /**
