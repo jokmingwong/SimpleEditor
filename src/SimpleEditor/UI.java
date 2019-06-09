@@ -76,7 +76,6 @@ public class UI extends JFrame implements ActionListener {
     private boolean hasListener = false;
     private boolean canEdit = false;
 
-
     //bottom info
     private final JLabel lineCount = new JLabel("Lines:0");
     private final JLabel lengthCount = new JLabel("Length:0");
@@ -227,9 +226,6 @@ public class UI extends JFrame implements ActionListener {
         toolBar.add(aboutButton);
         toolBar.addSeparator(bigDiv);
 
-
-
-
         //bottom
         JPanel bottomInfo = new JPanel();
         bottomInfo.add(lineCount);
@@ -243,7 +239,6 @@ public class UI extends JFrame implements ActionListener {
         bottomInfo.setBackground(new Color(220, 225, 223));
         bottomInfo.setSize(new Dimension(this.getWidth(), 8));
         panel.add(bottomInfo, BorderLayout.SOUTH);
-
 
         /* actions set */
         //file part
@@ -278,7 +273,6 @@ public class UI extends JFrame implements ActionListener {
         selectAll.setToolTipText("Select All");
         selectAll.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_A, InputEvent.CTRL_MASK));
         edit.add(selectAll);
-
 
         // Format Text
         format.addActionListener(this);
@@ -391,7 +385,7 @@ public class UI extends JFrame implements ActionListener {
         Undo.undoManuInit(edit, undoIcon, redoIcon);
         Undo.UndoButtonInit(undoButton, redoButton, textArea);
         // autocomplete
-        //AutoComplete autoComplete = new AutoComplete(this,new ArrayList<String>(Arrays.asList(supportedKeywords.getAll())));
+        autocomplete = new AutoComplete(this,new ArrayList<String>(Arrays.asList(supportedKeywords.getAll())));
     }
 
     private void updateBottom(int lineset, int clomnset) {
@@ -401,7 +395,12 @@ public class UI extends JFrame implements ActionListener {
         nowCol.setText("nowCol:" + clomnset);
 
     }
-
+	/**
+	*此函数用于监听textArea的各种按钮
+	*@param 各种动作
+	*根据各种各样的操作对应各种响应
+	*
+	*/
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == newFile || e.getSource() == newButton) newFileFunction();
@@ -418,7 +417,12 @@ public class UI extends JFrame implements ActionListener {
         else if (e.getSource() == aboutSoftware || e.getSource() == aboutButton) new About(this).software();
 
     }
-
+	/**
+	*此函数用于相应关闭动作
+	*@param 无
+	*关闭窗口，选择保存或退出
+	*
+	*/
     private void closeFunction() {
         if (canEdit) {
             Object[] options = {"Save and exit", "No Save and exit", "Return"};
@@ -434,7 +438,12 @@ public class UI extends JFrame implements ActionListener {
             this.dispose();// dispose all resources and close the application
         }
     }
-
+	/**
+	*此函数用于对应于新文件动作
+	*@param 无
+	*新建文件，如果文本区有内容先提示是否保存
+	*
+	*/
     private void newFileFunction() {
         if (canEdit) {
             Object[] options = {"Save", "No Save", "Return"};
@@ -451,7 +460,12 @@ public class UI extends JFrame implements ActionListener {
             ClearAll.clear(textArea);
         }
     }
-
+	/**
+	*此函数用于对应于加粗动作
+	*@param 无
+	*针对文本进行加粗处理
+	*
+	*/
     private void boldFontFunction() {
         if (textArea.getFont().getStyle() == Font.BOLD) {
             textArea.setFont(textArea.getFont().deriveFont(Font.PLAIN));
@@ -459,7 +473,12 @@ public class UI extends JFrame implements ActionListener {
             textArea.setFont(textArea.getFont().deriveFont(Font.BOLD));
         }
     }
-
+	/**
+	*此函数用于对应于斜体动作
+	*@param 无
+	*针对文本进行斜体处理
+	*
+	*/
     private void italicFontFunction() {
         if (textArea.getFont().getStyle() == Font.ITALIC) {
             textArea.setFont(textArea.getFont().deriveFont(Font.PLAIN));
@@ -467,7 +486,12 @@ public class UI extends JFrame implements ActionListener {
             textArea.setFont(textArea.getFont().deriveFont(Font.ITALIC));
         }
     }
-
+	/**
+	*此函数用于对应于清除动作
+	*@param 无
+	*清除文本框内所有文本
+	*
+	*/
     private void clearFileFunction() {
         Object[] options = {"Yes", "No"};
         int n = JOptionPane.showOptionDialog(this, "Are you sure to clear the text Area ?", "Question",
@@ -476,11 +500,21 @@ public class UI extends JFrame implements ActionListener {
             ClearAll.clear(textArea);
         }
     }
-
+	/**
+	*此函数用于返回textArea
+	*@param 无
+	*返回对应值
+	*
+	*/
     public JTextArea getTextArea() {
         return textArea;
     }
-
+	/**
+	*此函数用于对应于打开文件动作
+	*@param 无
+	*打开一个已存在的文件
+	*
+	*/
     private void openFileFunction() {
         JFileChooser open = new JFileChooser(); // open up a file chooser (a dialog for the user to  browse files to open)
         int option = open.showOpenDialog(this); // get the option that the user selected (approve or cancel)
@@ -494,7 +528,7 @@ public class UI extends JFrame implements ActionListener {
                     textArea.append(scan.nextLine() + "\n");
                 }
 
-                //enableAutoComplete(openFile);
+                AutoComplete.enableAutoComplete(autocomplete);
             } catch (Exception ex) { // catch any exceptions, and...
                 // ...write to the debug console
                 System.err.println(ex.getMessage());
@@ -503,7 +537,12 @@ public class UI extends JFrame implements ActionListener {
 
     }
 
-
+	/**
+	*此函数用监听windows按键
+	*@param 无
+	*针对不同按键进行不同的处理，主要是处理退出和关闭程序
+	*
+	*/
     @Override
     protected void processWindowEvent(WindowEvent e) {
         if (e.getID() == WindowEvent.WINDOW_CLOSING) {
@@ -527,7 +566,12 @@ public class UI extends JFrame implements ActionListener {
         return textArea;
     }
 
-
+	/**
+	*此类用于提供对于全选的支持
+	*@param 无
+	*全选用的基础类
+	*
+	*/
     class SelectAllAction extends AbstractAction {
         private static final long serialVersionUID = 1L;
 
@@ -543,7 +587,12 @@ public class UI extends JFrame implements ActionListener {
 
     }
 
-
+	/**
+	*此函数用于对应于保存文件动作
+	*@param 无
+	*将现有的文件进行保存
+	*
+	*/
     private void saveFile() {
         // Open a file chooser
         JFileChooser fileChoose = new JFileChooser();
@@ -563,7 +612,7 @@ public class UI extends JFrame implements ActionListener {
                 out.write(textArea.getText());
                 out.close();
 
-                //enableAutoComplete(openFile);
+                AutoComplete.enableAutoComplete(autocomplete);
                 canEdit = false;
             } catch (Exception ex) { // again, catch any exceptions and...
                 // ...write to the debug console

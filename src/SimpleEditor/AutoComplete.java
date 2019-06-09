@@ -13,24 +13,26 @@ import javax.swing.event.DocumentListener;
 /**
  * 此类用于自动补全 自动补全的范围包括： C++/Java
  * 关键字，括号，引号，以及文本之前已经出现过的自定义方法名、变量名、变量名
+ * <p>
+ * 创建方式：直接 AutoComplete autoComplete = new AutoComplete(ui, al);
+ * 创建时自动启用 autoComplete 功能
+ * <p>
+ * autoComplete 功能的开关由 disableAutoComplete(autoComplete)
+ * 和 enableAutoComplete(autoComplete) 来控制
+ * <p>
+ * 核心功能——关键词补全：已经实现
+ * 目前剩余需求：
+ * 优先级  序号、内容
+ * (3)    0、修复已有BUG
+ * (2)    1、候选词按照使用频率排序（目前候选词顺序不会改变）
+ * (5)    2、尝试加上tab键，但是通过tab选取候选项的时候要吞掉tab （目前如果直接加tab的话，tab不会被吞掉）
+ * (1)    3、改进数据结构，keyword set加上以前上下文写过的词（直接上三叉树，目前只有预设的关键词能补全）
+ * (4)    4、括号自动补全 （目前括号不能自动补全）
+ * (√)    5、word长度大于等于2的时候才放出候选项 （目前word长度为1的时候也会跳出候选框，非常麻烦）
+ * (√)    6、向前查找的时候，碰到空白字符再停（目前碰到非字母就会停下）
  *
- *  创建方式：直接 AutoComplete autoComplete = new AutoComplete(ui, al);
- *  创建时自动启用 autoComplete 功能
- *
- *  autoComplete 功能的开关由 disableAutoComplete(autoComplete)
- *  和 enableAutoComplete(autoComplete) 来控制
- *
- *  核心功能——关键词补全：已经实现
- *  目前剩余需求：
- *  1、候选词按照使用频率排序（目前候选词顺序不会改变）
- *  2、尝试加上tab键，但是通过tab选取候选项的时候要吞掉tab （目前如果直接加tab的话，tab不会被吞掉）
- *  3、改进数据结构，keyword set加上以前上下文写过的词（直接上三叉树，目前只有预设的关键词能补全）
- *  4、括号自动补全 （目前括号不能自动补全）
- *  5、word长度大于等于2的时候才放出候选项 （目前word长度为1的时候也会跳出候选框，非常麻烦）
- *  6、向前查找的时候，碰到空白字符再停（目前碰到非字母就会停下）
- *
- * @author  dengkunquan
- * @date    2019-06-07
+ * @author dengkunquan
+ * @date 2019-06-07
  */
 
 public class AutoComplete {
@@ -42,6 +44,7 @@ public class AutoComplete {
         INSERTING, COMPLETED
     }
 
+    private int insertPos = 0;
     private Mode mode = Mode.COMPLETED;
     private final UI ui;
     private final JTextArea txtInput;
@@ -53,11 +56,12 @@ public class AutoComplete {
     };
     private static final String COMMIT_ACTION = "commit";
     private String content = null;
-    private ArrayList<String> wordsInContent;
-    private Trie trie;
+    private ArrayList<String> keywords;
+    private TernarySearchTrie<Integer> trie;
     private actionListener actListener;
     private keyAdapter keyListener;
     private documentListener docListener;
+    private String[] words;
 
     public AutoComplete(UI ui, ArrayList<String> al) {
         this.ui = ui;
@@ -65,6 +69,7 @@ public class AutoComplete {
         actListener = new actionListener(txtInput, al);
         keyListener = new keyAdapter(txtInput);
         docListener = new documentListener(txtInput, al);
+        keywords = al;
 
         setupComboBox(this.txtInput, al);
     }
@@ -75,9 +80,9 @@ public class AutoComplete {
      */
 
     private void setupComboBox(final JTextArea txtInput,
-                                      final ArrayList<String> items) {
+                               final ArrayList<String> items) {
 
-        setAdjusting(cbInput, false);
+        Utility.setAdjusting(cbInput, false);
 
         /* step 2：往model里加word */
         for (String item : items) {
@@ -114,10 +119,9 @@ public class AutoComplete {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            if (!isAdjusting(cbInput)) {
+            if (!Utility.isAdjusting(cbInput)) {
                 if (cbInput.getSelectedItem() != null) {
-                    setText(txtInput, cbInput);
-//                    txtInput.setText(txtInput.getText() + cbInput.getSelectedItem().toString()); // TODO 需要更改，应为追加而非设置文本
+                    Utility.setText(txtInput, cbInput);
                 }
             }
         }
@@ -133,12 +137,13 @@ public class AutoComplete {
 
         @Override
         public void keyPressed(KeyEvent e) {
-            setAdjusting(cbInput, true);
+            Utility.setAdjusting(cbInput, true);
             if (e.getKeyCode() == KeyEvent.VK_SPACE) {          // 如果在显示候选框的情况下打了空格，就关掉它
                 cbInput.setPopupVisible(false);
             }
 
-            if ( mode == Mode.INSERTING
+            if (mode == Mode.INSERTING
+                    // && txtInput.getCaretPosition() == insertPos
                     && (e.getKeyCode() == KeyEvent.VK_ENTER
                     || e.getKeyCode() == KeyEvent.VK_TAB
                     || e.getKeyCode() == KeyEvent.VK_UP
@@ -146,8 +151,7 @@ public class AutoComplete {
                 e.setSource(cbInput);                           // 将按键时间重定向至cbInput
                 cbInput.dispatchEvent(e);                       // 按照按键来调度选项
                 if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-                    setText(txtInput, cbInput);
-//                    txtInput.setText(txtInput.getText() + Objects.requireNonNull(cbInput.getSelectedItem()).toString()); // TODO 此处需要修改，应为追加文本而非设置文本
+                    Utility.setText(txtInput, cbInput);
                     cbInput.setPopupVisible(false);             // 回车和tab会打印并关闭候选框
                     mode = Mode.COMPLETED;
                 }
@@ -156,7 +160,7 @@ public class AutoComplete {
             if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {         // 退格会关闭候选框
                 cbInput.setPopupVisible(false);
             }
-            setAdjusting(cbInput, false);
+            Utility.setAdjusting(cbInput, false);
         }
     }
 
@@ -171,120 +175,123 @@ public class AutoComplete {
             this.items = items;
         }
 
+
+        // TRIGGER(s)
+        // 插进去的时候，光标还没有移动
+        // 先插字符，然后计算，最后移动光标
+        // 每次 update 光标都是最后移动
         @Override
         public void insertUpdate(DocumentEvent e) {
-            updateList();
+            /*
+            // 这段被注释的代码是用于括号补全的
+            if(txtInput.getCaretPosition() > 0) {
+                char c = txtInput.getText().charAt(txtInput.getCaretPosition() - 1);
+                String s = String.valueOf(c);
+                if (Utility.isBracket(s, bracketMap)) {
+                    txtInput.setText(
+                            generateNewContext(txtInput.getText(),
+                                    bracketMap.get(s),
+                                    txtInput.getCaretPosition() - 1,
+                                    txtInput.getCaretPosition()));
+                    return;
+                }
+            }*/
+            /*words = Utility.getAllWords(txtInput.getText());
+            for (String word : words) {
+                Integer val = trie.get(word);
+                val = val == null ? 0 : val;
+                trie.put(
+                        word,
+                        val + 1
+                );
+            }*/
+            updateListForInsert();
         }
 
         @Override
         public void removeUpdate(DocumentEvent e) {
-            updateList();
+            //updateListForRemove();
         }
 
         @Override
         public void changedUpdate(DocumentEvent e) {
-            updateList();
         }
 
-        private void updateList() {
-            setAdjusting(cbInput, true);
+        private void updateListForInsert() {
+            String content = txtInput.getText();
+            int position = txtInput.getCaretPosition();
+
+            Utility.setAdjusting(cbInput, true);
             model.removeAllElements();
-            String input = getPrefix(txtInput.getText());
-            if (!input.isEmpty()) {
+            String prefix = Utility.getPrefixForInsert(content, position);
+            if (!prefix.isEmpty() && prefix.length() >= 2) {
                 updateItem(items);
                 for (String item : items) {
-                    if (item.startsWith(input)) {
+                    if (item.startsWith(prefix)) {
                         model.addElement(item);
                     }
                 }
             }
-            if(model.getSize() > 0){
-                cbInput.setPopupVisible(true);
-                mode = Mode.INSERTING;
-            } else {
+
+            // 输入大于等于两个字符才会出现候选框
+            if (model.getSize() <= 0 || prefix.length() < 2) {
                 cbInput.setPopupVisible(false);
                 mode = Mode.COMPLETED;
+            } else {
+                insertPos = txtInput.getCaretPosition();
+                cbInput.setPopupVisible(true);
+                mode = Mode.INSERTING;
             }
 
-            setAdjusting(cbInput, false);
+            Utility.setAdjusting(cbInput, false);
+
+        }
+
+        private void updateListForRemove() {
+            String content = txtInput.getText();
+            int position = txtInput.getCaretPosition();
+
+            Utility.setAdjusting(cbInput, true);
+            model.removeAllElements();
+
+            //
+            String prefix = Utility.getPrefixForRemove(content, position);
+            if (!prefix.isEmpty() && prefix.length() >= 2) {
+                updateItem(items);
+                for (String item : items) {
+                    if (item.startsWith(prefix)) {
+                        model.addElement(item);
+                    }
+                }
+            }
+
+            if (model.getSize() <= 0) {
+                cbInput.setPopupVisible(false);
+                mode = Mode.COMPLETED;
+            } else {
+                insertPos = txtInput.getCaretPosition();
+                cbInput.setPopupVisible(true);
+                mode = Mode.INSERTING;
+            }
+
+            Utility.setAdjusting(cbInput, false);
+
         }
 
         // TODO 将这个方法改造成用于支持 updateList 方法的类，主要用于更新list的内容
         // 依赖于trie树的词频统计
+        // 统计所有词，然后排序
         private void updateItem(ArrayList<String> items) {
 
         }
     }
 
-    private void setText(JTextArea txtInput, JComboBox cbInput){
-        int position = txtInput.getCaretPosition() +
-                1 +                     // the length of the space
-                Objects.requireNonNull(cbInput.getSelectedItem()).toString().length() -
-                getPrefix(txtInput.getText()).length();
-        txtInput.setText(insertCompletion(txtInput, cbInput));
-        txtInput.setCaretPosition(position);
-    }
 
-    private String getPrefix(String content) {
-        int position = txtInput.getCaretPosition();
-        int start = Utility.getStartOfTypingWord(position-1, content);
-        return content.substring(start + 1, position);
-    }
-
-    private String insertCompletion(JTextArea txtInput, JComboBox cbInput){
-        int position = txtInput.getCaretPosition();
-        String content = txtInput.getText();
-        int start = Utility.getStartOfTypingWord(position-1, content);
-
-        return content.substring(0, start+1) +
-                Objects.requireNonNull(cbInput.getSelectedItem()).toString() +
-                " " +
-                content.substring(position); // TODO 此处需要修改，应为追加文本而非设置文本
-    }
-
-    /**
-     * TODO
-     * 原有的那个更新方法可以抛弃了，但是以下要求和逻辑还需要保留
-     * 1、括号强制自动补全
-     * 2、关键字的补全可能需要通过 position 来完善
-     * （3、后续可能更改性能问题）
-     */
-    /*private void updateList(DocumentEvent e) {
-        position = e.getOffset();
-
-        try {
-            content = txtInput.getText(0, position + 1);
-        } catch (BadLocationException ble) {
-            ble.printStackTrace();
-        }
-
-        if (e.getLength() != 1) {
-            return;
-        }
-
-        if (Utility.isBracket(content.charAt(position), bracketMap)) {
-            isKeyword = false;
-            Utility.invokeBracket(content, position, bracketMap);
-        }
-    }*/
-
-
-    private boolean isAdjusting(JComboBox cbInput) {
-        if (cbInput.getClientProperty("is_adjusting") instanceof Boolean) {
-            return (Boolean) cbInput.getClientProperty("is_adjusting");
-        }
-        return false;
-    }
-
-    private void setAdjusting(JComboBox cbInput, boolean adjusting) {
-        cbInput.putClientProperty("is_adjusting", adjusting);
-    }
-
-    public static void enableAutoComplete(AutoComplete autoComplete){
+    public static void enableAutoComplete(AutoComplete autoComplete) {
         autoComplete.getTxtInput().getDocument().addDocumentListener(autoComplete.getDocListener());
     }
 
-    public static void disableAutoComplete(AutoComplete autoComplete){
+    public static void disableAutoComplete(AutoComplete autoComplete) {
         autoComplete.getTxtInput().getDocument().removeDocumentListener(autoComplete.getDocListener());
     }
 
