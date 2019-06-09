@@ -1,16 +1,11 @@
 package SimpleEditor;
 
-/*
- * LineNumber.java
+/**
  * @author LiNan
- *设置行号
- *UI中请在
- *JScrollPane scrollPane = new JScrollPane(textArea);
- *后加入
+ *设置行号 UI中请在JScrollPane scrollPane = new JScrollPane(textArea);后加入
  *LineNumber lineNumber = new LineNumber();
  *scrollPane.setRowHeaderView(lineNumber);
- *更改字体的fontType.addActionListener(里面也要改  目前是加一句
- *lineNumber.setFont(new Font(p, Font.PLAIN, s));
+ *更改字体的fontType.addActionListener(里面也要改  目前是加一句lineNumber.setFont(new Font(p, Font.PLAIN, s));
  *下面更改字号的fontSize.addActionListener(同理
  * */
 
@@ -74,6 +69,10 @@ public class LineNumber extends javax.swing.JComponent {
 		setPreferredSize(endLineNum);
 	}
 
+	/**
+	 * @author Linan
+	 * @param font construct a font by "new Font(name, bold or not bold, int size)"
+	 */
 	@Override
 	public void setFont(Font font) {
 		super.setFont(font);
@@ -81,6 +80,7 @@ public class LineNumber extends javax.swing.JComponent {
 		fontLineHeight = fontMetrics.getHeight();
 		setLineHeight(fontLineHeight);
 	}
+
 
 	public void setLineHeight(int lineHeight) {
 		if (lineHeight > 0) {
