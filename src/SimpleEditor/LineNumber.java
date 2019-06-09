@@ -1,5 +1,4 @@
-package SimpleEditor;
-
+package simplejavatexteditor;
 
 /*
  * LineNumber.java
@@ -25,24 +24,24 @@ import java.awt.Rectangle;
 public class LineNumber extends javax.swing.JComponent {
 
 	private static final long serialVersionUID = 1L;
-	public final Color D_BACKGROUD = new Color(220, 225, 214);
-	public final Color D_FOREGROUD = Color.BLACK;
-	private final Font D_FONT = new Font("黑体", Font.BOLD, 22);
-	public final int MARGIN = 3;
-	public final int maxHEIGHT = Integer.MAX_VALUE - 999999;
+	private final Color BACKGROUD = new Color(220, 225, 214);
+	private final Color FOREGROUD = Color.BLACK;
+	private final Font FONT = new Font("黑体", Font.BOLD, 22);
+	private final int MARGIN = 3;
+	private final int maxHEIGHT = Integer.MAX_VALUE - 999999;
 	private final int STARTOFFSET = 4;
 	private FontMetrics fontMetrics;
 	private int lineHeight;
 	private int rowWidth;
 
 	public LineNumber() {
-		setFont(D_FONT);
-		setForeground(D_FOREGROUD);
-		setBackground(D_BACKGROUD);
+		setFont(FONT);
+		setForeground(FOREGROUD);
+		setBackground(BACKGROUD);
 		setSize("8192");
 	}
 
-	public int getLineHeight() {
+	private int getLineHeight() {
         if (lineHeight <= 0) {
             return fontMetrics.getHeight();
         }
@@ -55,7 +54,7 @@ public class LineNumber extends javax.swing.JComponent {
 		Rectangle rectangle = graphics.getClipBounds();
 		graphics.fillRect(rectangle.x, rectangle.y, rectangle.width, rectangle.height);
 		graphics.setColor(getForeground());
-		graphics.setFont(D_FONT);//如果要更改字体请注释掉此句
+		graphics.setFont(FONT);//如果要更改字体请注释掉此句
 		int nowheight = getLineHeight();
 		int beginLine = (rectangle.y / nowheight) + 1;
 		int endLine = beginLine + (rectangle.height / nowheight);
@@ -84,8 +83,7 @@ public class LineNumber extends javax.swing.JComponent {
 	}
 
 
-
-	public void setSize(String row) {
+	private void setSize(String row) {
 		int width = fontMetrics.stringWidth(row);
 		if (rowWidth < width) {
 			rowWidth = width;
