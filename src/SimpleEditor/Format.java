@@ -31,65 +31,57 @@ public class Format {
 			String arr[] = string.split(a);
 			StringBuilder result = new StringBuilder();
 			if (arr != null) {
-				String _tab = "    ";
 				Stack<String> stack = new Stack<String>();
 				for (int i = 0; i < arr.length; i++) {
 					String tmp = arr[i].trim();
 					if (tmp.indexOf("{") != -1) {
 						String str = getStack(stack, false);
-						if (str == null) {
-							result.append((tmp + "\n"));
-							str = "";
+						if (str != null) {
+							str = str + SupportedKeywords.TAB;
+							result.append(str + tmp + SupportedKeywords.NEWLINE);
 						} else {
-							str = str + _tab;
-							result.append(str + tmp + "\n");
+							result.append((tmp + SupportedKeywords.NEWLINE));
+							str = "";
 						}
 						stack.push(str);
 					} else if (tmp.indexOf("}") != -1) {
 						String str = getStack(stack, true);
-						if (str == null) {
-							result.append(tmp + "\n");
-						} else {
-							result.append(str + tmp + "\n");
+						if (str != null) {
+							result.append(str);
 						}
+						result.append(tmp + SupportedKeywords.NEWLINE);
 					} else {
 						String str = getStack(stack, false);
-						if (str == null) {
-							result.append(tmp + "\n");
-						} else {
-							result.append(str + _tab + tmp + "\n");
+						if (str != null) {
+							result.append(str + SupportedKeywords.TAB);
 						}
+						result.append(tmp + SupportedKeywords.NEWLINE);
 					}
 				}
 			}
-			String res = result.toString();
-			return res;
+			return result.toString();
 		} catch (Exception e) {
 		}
 		return null;
 	}
 
 	private static String changeLineFeeds(String string, String a, String b) {
-		try {
-			string = string.replace(a, "$<<linanA>>$<<linanB>>");
-			String arr[] = string.split("$<<linanA>>");
-			StringBuilder result = new StringBuilder();
-			if (arr != null) {
-				for (int i = 0; i < arr.length; i++) {
-					String t = arr[i];
-					result.append(t.trim());
-					if (t.indexOf("//") != -1 && "\n".equals(a)) {
-						result.append("\n");
-					}
+		string = string.replace(a, "$<<linanA>>$<<linanB>>");
+		String arr[] = string.split("$<<linanA>>");
+		StringBuilder result = new StringBuilder();
+		if (arr != null) {
+			for (int i = 0; i < arr.length; i++) {
+				String t = arr[i];
+				result.append(t.trim());
+				if (t.indexOf("//") != -1 && "\n".equals(a)) {
+					result.append("\n");
 				}
 			}
-			String res = result.toString();
-			res = res.replace("$<<linanB>>", b);
-			res = res.replace("$<<linanA>>", "");
-			return res;
-		} catch (Exception e) {
 		}
-		return null;
+		String res = result.toString();
+		res = res.replace("$<<linanB>>", b);
+		res = res.replace("$<<linanA>>", "");
+		return res;
 	}
 
 	private static String changeStrToUUid(String string, String type) {
@@ -116,18 +108,13 @@ public class Format {
 						}
 					}
 					int tmp2Len = tmp2.length();
-					if (tmp2Len > -1) {
-						if (tmp2Len % 2 == 1) {
-
-						} else {
-
-							String uuid = UUID.randomUUID().toString().replace("-", "").toLowerCase();
-							uuid = type + uuid + type;
-							mapZY.put(uuid, type + tmp + type);
-							sb.append(uuid);
-							bool = false;
-							indexFront = indexEnd;
-						}
+					if (tmp2Len > -1 && tmp2Len % 2 != 1) {
+						String uuid = UUID.randomUUID().toString().replace("-", "").toLowerCase();
+						uuid = type + uuid + type;
+						mapZY.put(uuid, type + tmp + type);
+						sb.append(uuid);
+						bool = false;
+						indexFront = indexEnd;
 					}
 				}
 			}
@@ -138,6 +125,8 @@ public class Format {
 
 
 	private static String formatNow(String string) {
+		if (string == null)
+			return string;
 		String newString = changeStrToUUid(string, "\"");
 		newString = changeStrToUUid(newString, "'");
 		newString = changeLineFeeds(newString, "\n", "");
