@@ -145,7 +145,9 @@ public class AutoComplete {
                 }
             }
 
-            if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {         // 退格会关闭候选框
+            if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {         // 退格会关闭候选框并且清空候选框
+                model.removeAllElements();
+                mode = Mode.COMPLETED;
                 cbInput.setPopupVisible(false);
             }
             Utility.setAdjusting(cbInput, false);

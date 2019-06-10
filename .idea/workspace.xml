@@ -11,6 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="097bbac4-a84e-42fe-b2b2-5b0ab494b9a1" name="Default Changelist" comment="Default Changelist">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Javadoc/SimpleEditor/About.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/SimpleEditor/About.html" afterDir="false" />
@@ -196,6 +197,25 @@
       <change beforePath="$PROJECT_DIR$/src/SimpleEditor/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PandaEditor/UI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SimpleEditor/Undo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PandaEditor/Undo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SimpleEditor/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PandaEditor/Utility.java" afterDir="false" />
+=======
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/FindWord.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Format.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/LineNumber.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/UI$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/UI$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/UI$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/UI$SelectAllAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/UI.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Utility.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete$actionListener.class" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete$actionListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete$documentListener.class" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete$documentListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete$keyAdapter.class" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete$keyAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete.class" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/HighLight.class" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/HighLight.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SimpleEditor/LineNumber.java" afterPath="$PROJECT_DIR$/src/SimpleEditor/LineNumber.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java" afterPath="$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java" />
+>>>>>>> be850d796fa563936d4d8df81c24d17b1f50eab3
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -206,6 +226,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PandaEditor/UI.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -274,24 +295,46 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+>>>>>>> be850d796fa563936d4d8df81c24d17b1f50eab3
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PandaEditor/Trie.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="130">
               <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+=======
+      <file leaf-file-name="Utility.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Utility.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#213#214#0" expanded="true" />
+                <element signature="e#244#245#0" expanded="true" />
+                <element signature="e#7768#7777#0" expanded="true" />
+                <marker date="1560168457704" expanded="true" signature="10746:10752" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PandaEditor/SupportedKeywords.java">
+      <file leaf-file-name="SupportedKeywords.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
-              <caret line="113" column="24" selection-start-line="113" selection-start-column="24" selection-end-line="113" selection-end-column="24" />
+            <state relative-caret-position="330">
+              <caret line="112" column="4" lean-forward="false" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -299,6 +342,62 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="UI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/UI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="114" column="38" lean-forward="false" selection-start-line="114" selection-start-column="38" selection-end-line="114" selection-end-column="38" />
+              <folding>
+                <marker date="1560087448196" expanded="true" signature="22761:23004" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LineNumber.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/LineNumber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Nbutton.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Nbutton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+              <folding />
+>>>>>>> be850d796fa563936d4d8df81c24d17b1f50eab3
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PandaEditor/SupportedKeywords.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="670">
+              <caret line="113" column="24" selection-start-line="113" selection-start-column="24" selection-end-line="113" selection-end-column="24" />
+=======
+      <file leaf-file-name="SimpleEditor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/SimpleEditor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+>>>>>>> be850d796fa563936d4d8df81c24d17b1f50eab3
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PandaEditor/PandaEditor.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -307,6 +406,14 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+      <file leaf-file-name="Setting.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Setting.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-198">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+>>>>>>> be850d796fa563936d4d8df81c24d17b1f50eab3
             </state>
           </provider>
         </entry>
@@ -314,10 +421,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PandaEditor/LineNumber.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="366">
               <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
+=======
+            <state relative-caret-position="462">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <marker date="1560168457678" expanded="true" signature="5726:5792" ph="{...}" />
+>>>>>>> be850d796fa563936d4d8df81c24d17b1f50eab3
               </folding>
             </state>
           </provider>
@@ -375,6 +489,7 @@
         <option value="$PROJECT_DIR$/src/SimpleEditor/SimpleEditor.java" />
         <option value="$PROJECT_DIR$/src/SimpleEditor/About.java" />
         <option value="$PROJECT_DIR$/src/SimpleEditor/Nbutton.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/SimpleEditor/HighLight.java" />
         <option value="$PROJECT_DIR$/src/SimpleEditor/LineNumber.java" />
         <option value="$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java" />
@@ -395,6 +510,29 @@
     <option name="y" value="54" />
     <option name="width" value="2486" />
     <option name="height" value="1398" />
+=======
+        <option value="$PROJECT_DIR$/src/SimpleEditor/UI.java" />
+        <option value="$PROJECT_DIR$/src/SimpleEditor/Setting.java" />
+        <option value="$PROJECT_DIR$/src/SimpleEditor/HighLight.java" />
+        <option value="$PROJECT_DIR$/src/SimpleEditor/FindWord.java" />
+        <option value="$PROJECT_DIR$/src/SimpleEditor/LineNumber.java" />
+        <option value="$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java" />
+        <option value="$PROJECT_DIR$/src/SimpleEditor/Utility.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-171" />
+    <option name="y" value="206" />
+    <option name="width" value="1946" />
+    <option name="height" value="1106" />
+>>>>>>> be850d796fa563936d4d8df81c24d17b1f50eab3
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -425,6 +563,13 @@
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+>>>>>>> be850d796fa563936d4d8df81c24d17b1f50eab3
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -533,9 +678,14 @@
       <updated>1559985020742</updated>
       <workItem from="1559985022312" duration="28036000" />
       <workItem from="1560090236974" duration="6434000" />
+<<<<<<< HEAD
       <workItem from="1560135995301" duration="1769000" />
       <workItem from="1560164847498" duration="6135000" />
       <workItem from="1560171814145" duration="1615000" />
+=======
+      <workItem from="1560135995301" duration="2951000" />
+      <workItem from="1560168389299" duration="319000" />
+>>>>>>> be850d796fa563936d4d8df81c24d17b1f50eab3
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1560095074120</created>
@@ -548,6 +698,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="46998000" />
   </component>
   <component name="TodoView">
@@ -593,6 +744,43 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info anchor="right" id="Maven" order="9" />
+=======
+    <option name="totallyTimeSpent" value="40749000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-11" y="35" width="1942" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925338" sideWeight="0.50215983" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33170134" sideWeight="0.47084233" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="89" y="135" width="1742" height="856" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18482251" sideWeight="0.49568033" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33170134" sideWeight="0.52915764" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2262419" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925338" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+>>>>>>> be850d796fa563936d4d8df81c24d17b1f50eab3
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -604,6 +792,105 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/swing/JComponent.java" />
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/UI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4532">
+          <caret line="218" column="49" lean-forward="false" selection-start-line="218" selection-start-column="49" selection-end-line="218" selection-end-column="49" />
+          <folding>
+            <marker date="1560087448196" expanded="true" signature="22761:23004" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/FindWord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="81" column="5" lean-forward="true" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Setting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108">
+          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/LineNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1672">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Trie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2486">
+          <caret line="115" column="75" lean-forward="false" selection-start-line="115" selection-start-column="75" selection-end-line="115" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/SimpleEditor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2880#2881#0" expanded="true" />
+            <element signature="e#2921#2922#0" expanded="true" />
+            <element signature="e#3279#3280#0" expanded="true" />
+            <element signature="e#3306#3307#0" expanded="true" />
+            <element signature="e#3778#3779#0" expanded="true" />
+            <element signature="e#3841#3842#0" expanded="true" />
+            <element signature="e#4213#4214#0" expanded="true" />
+            <element signature="e#4244#4245#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9468">
+          <caret line="273" column="32" lean-forward="false" selection-start-line="273" selection-start-column="32" selection-end-line="273" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/swing/JComponent.java" />
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/HighLight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="44" column="68" lean-forward="false" selection-start-line="44" selection-start-column="68" selection-end-line="44" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> be850d796fa563936d4d8df81c24d17b1f50eab3
     <entry file="uml://JavaScript-modules-diagram/C:/Users/AdamWong/Documents/Computer Science Homework/SimpleEditor/src/SimpleEditor">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -827,8 +1114,12 @@
           <Categories>
             <Category>Fields</Category>
             <Category>Constructors</Category>
+<<<<<<< HEAD
             <Category>Methods</Category>
+=======
+>>>>>>> be850d796fa563936d4d8df81c24d17b1f50eab3
             <Category>Properties</Category>
+            <Category>Methods</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
@@ -1027,8 +1318,8 @@
           <Categories>
             <Category>Fields</Category>
             <Category>Constructors</Category>
-            <Category>Methods</Category>
             <Category>Properties</Category>
+            <Category>Methods</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
@@ -1075,6 +1366,25 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/About.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="79" column="29" lean-forward="false" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Format.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> be850d796fa563936d4d8df81c24d17b1f50eab3
     <entry file="uml://JAVA/SimpleEditor.LineNumber">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1428,6 +1738,19 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/TernarySearchTrie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <marker date="1560168457678" expanded="true" signature="5726:5792" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+>>>>>>> be850d796fa563936d4d8df81c24d17b1f50eab3
     <entry file="uml://JAVA/SimpleEditor.Nbutton">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1539,6 +1862,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="108">
           <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
         </state>
@@ -1758,6 +2082,81 @@
           <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+=======
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+>>>>>>> be850d796fa563936d4d8df81c24d17b1f50eab3
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/SimpleEditor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Setting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/UI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="114" column="38" lean-forward="false" selection-start-line="114" selection-start-column="38" selection-end-line="114" selection-end-column="38" />
+          <folding>
+            <marker date="1560087448196" expanded="true" signature="22761:23004" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Nbutton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/LineNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="112" column="4" lean-forward="false" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Utility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#7768#7777#0" expanded="true" />
+            <marker date="1560168457704" expanded="true" signature="10746:10752" ph="{...}" />
           </folding>
         </state>
       </provider>
