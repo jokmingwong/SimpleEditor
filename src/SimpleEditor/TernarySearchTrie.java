@@ -3,6 +3,15 @@ package SimpleEditor;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/**
+ * 此三叉树可以通过 TernarySearchTrie<class> tree = new TernarySearchTrie<class>;
+ * 的方式创建一个存储某种类的对象的三叉树
+ *
+ * @param <Value> 数据类型
+ *
+ * @author dengkunquan
+ * @date 2019-06-09
+ */
 public class TernarySearchTrie<Value> {
     public static long numCompare = 0;
 
@@ -30,7 +39,7 @@ public class TernarySearchTrie<Value> {
         return (Value) x.val;
     }
 
-    public int getOccurTimes(String key){
+    public int getOccurTimes(String key) {
         Node x = get(root, key, 0);
         if (x == null) return 0;
         return x.Occurtimes;
@@ -45,7 +54,7 @@ public class TernarySearchTrie<Value> {
         if (d == key.length()) return x;
         char c = key.charAt(d);
         numCompare++;
-        return get(x.next[c], key, d+1);
+        return get(x.next[c], key, d + 1);
     }
 
     public void put(String key, Value val) {
@@ -62,7 +71,7 @@ public class TernarySearchTrie<Value> {
             return x;
         }
         char c = key.charAt(d);
-        x.next[c] = put(x.next[c], key, val, d+1);
+        x.next[c] = put(x.next[c], key, val, d + 1);
         numCompare++;
         return x;
     }
@@ -85,13 +94,13 @@ public class TernarySearchTrie<Value> {
         collect(x, new StringBuilder(prefix), results);
         return results;
     }
-/*
+
     public HashMap<String, Integer> getStringsWithNumberByPrefix(String prefix) {
         HashMap<String, Integer> results = new HashMap<>();
         Node x = get(root, prefix, 0);
         collect(x, new StringBuilder(prefix), results);
         return results;
-    }*/
+    }
 
     private void collect(Node x, StringBuilder prefix, ArrayList<String> results) {
         if (x == null) return;
@@ -103,17 +112,19 @@ public class TernarySearchTrie<Value> {
         }
         numCompare++;
     }
-/*
+
     private void collect(Node x, StringBuilder prefix, HashMap<String, Integer> results) {
         if (x == null) return;
-        if (x.val != null) results.add(prefix.toString());
+        if (x.val != null) results.put(prefix.toString(),
+                (results.get(prefix.toString()) == null ? 0 : results.get(prefix.toString()) + 1)
+        );
         for (char c = 0; c < R; c++) {
             prefix.append(c);
             collect(x.next[c], prefix, results);
             prefix.deleteCharAt(prefix.length() - 1);
         }
         numCompare++;
-    }*/
+    }
 
     public Iterable<String> keysThatMatch(String pattern) {
         ArrayList<String> results = new ArrayList<String>();
@@ -135,8 +146,7 @@ public class TernarySearchTrie<Value> {
                 collect(x.next[ch], prefix, pattern, results);
                 prefix.deleteCharAt(prefix.length() - 1);
             }
-        }
-        else {
+        } else {
             prefix.append(c);
             collect(x.next[c], prefix, pattern, results);
             prefix.deleteCharAt(prefix.length() - 1);
@@ -154,7 +164,7 @@ public class TernarySearchTrie<Value> {
         if (x.val != null) length = d;
         if (d == query.length()) return length;
         char c = query.charAt(d);
-        return longestPrefixOf(x.next[c], query, d+1, length);
+        return longestPrefixOf(x.next[c], query, d + 1, length);
     }
 
     public void delete(String key) {
@@ -166,10 +176,9 @@ public class TernarySearchTrie<Value> {
         if (d == key.length()) {
             if (x.val != null) N--;
             x.val = null;
-        }
-        else {
+        } else {
             char c = key.charAt(d);
-            x.next[c] = delete(x.next[c], key, d+1);
+            x.next[c] = delete(x.next[c], key, d + 1);
         }
 
         // remove subtrie rooted at x if it is completely empty
@@ -180,14 +189,14 @@ public class TernarySearchTrie<Value> {
         return null;
     }
 
-    public int height(){
+    public int height() {
         return height(root);
     }
 
-    public int height(Node x){
+    public int height(Node x) {
         int h = -1;
-        for(String s : keys()){
-            if(s.length() > h) h = s.length();
+        for (String s : keys()) {
+            if (s.length() > h) h = s.length();
         }
         return h;
     }
