@@ -86,7 +86,7 @@ public class UI extends JFrame implements ActionListener {
     public UI() throws HeadlessException {
 
         /* page main consist */
-        setTitle("SimpleEditor");
+        setTitle("PandaEditor");
         setSize(1280, 720);
         setIconImage(titleIcon.getImage());
         setLocationRelativeTo(null);
@@ -326,7 +326,7 @@ public class UI extends JFrame implements ActionListener {
 
         // setting part
         seting.addActionListener(this);
-        aboutMe.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F1, 0));
+        seting.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F1, 0));
         setting.add(seting);
 
         // about part
@@ -397,7 +397,7 @@ public class UI extends JFrame implements ActionListener {
     }
 	/**
 	*此函数用于监听textArea的各种按钮
-	*@param 各种动作
+	*
 	*根据各种各样的操作对应各种响应
 	*
 	*/
@@ -419,7 +419,7 @@ public class UI extends JFrame implements ActionListener {
     }
 	/**
 	*此函数用于相应关闭动作
-	*@param 无
+	*
 	*关闭窗口，选择保存或退出
 	*
 	*/
@@ -440,7 +440,7 @@ public class UI extends JFrame implements ActionListener {
     }
 	/**
 	*此函数用于对应于新文件动作
-	*@param 无
+	*
 	*新建文件，如果文本区有内容先提示是否保存
 	*
 	*/
@@ -462,7 +462,7 @@ public class UI extends JFrame implements ActionListener {
     }
 	/**
 	*此函数用于对应于加粗动作
-	*@param 无
+	*
 	*针对文本进行加粗处理
 	*
 	*/
@@ -475,7 +475,7 @@ public class UI extends JFrame implements ActionListener {
     }
 	/**
 	*此函数用于对应于斜体动作
-	*@param 无
+	*
 	*针对文本进行斜体处理
 	*
 	*/
@@ -488,7 +488,7 @@ public class UI extends JFrame implements ActionListener {
     }
 	/**
 	*此函数用于对应于清除动作
-	*@param 无
+	*
 	*清除文本框内所有文本
 	*
 	*/
@@ -502,7 +502,7 @@ public class UI extends JFrame implements ActionListener {
     }
 	/**
 	*此函数用于返回textArea
-	*@param 无
+	*
 	*返回对应值
 	*
 	*/
@@ -511,7 +511,7 @@ public class UI extends JFrame implements ActionListener {
     }
 	/**
 	*此函数用于对应于打开文件动作
-	*@param 无
+	*
 	*打开一个已存在的文件
 	*
 	*/
@@ -522,7 +522,6 @@ public class UI extends JFrame implements ActionListener {
             ClearAll.clear(textArea); // clear the TextArea before applying the file contents
             try {
                 File openFile = open.getSelectedFile();
-                setTitle(openFile.getName() + " | 打开文件");
                 Scanner scan = new Scanner(new FileReader(openFile.getPath()));
                 while (scan.hasNext()) {
                     textArea.append(scan.nextLine() + "\n");
@@ -539,7 +538,7 @@ public class UI extends JFrame implements ActionListener {
 
 	/**
 	*此函数用监听windows按键
-	*@param 无
+	*
 	*针对不同按键进行不同的处理，主要是处理退出和关闭程序
 	*
 	*/
@@ -568,7 +567,7 @@ public class UI extends JFrame implements ActionListener {
 
 	/**
 	*此类用于提供对于全选的支持
-	*@param 无
+	*
 	*全选用的基础类
 	*
 	*/
@@ -589,7 +588,7 @@ public class UI extends JFrame implements ActionListener {
 
 	/**
 	*此函数用于对应于保存文件动作
-	*@param 无
+	*
 	*将现有的文件进行保存
 	*
 	*/
@@ -606,8 +605,6 @@ public class UI extends JFrame implements ActionListener {
         if (option == JFileChooser.APPROVE_OPTION) {
             try {
                 File openFile = fileChoose.getSelectedFile();
-                setTitle(openFile.getName() + " | 文件保存");
-
                 BufferedWriter out = new BufferedWriter(new FileWriter(openFile.getPath()));
                 out.write(textArea.getText());
                 out.close();
