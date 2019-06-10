@@ -4,18 +4,201 @@
     <option name="SCOPE_TYPE" value="8" />
     <option name="CUSTOM_SCOPE_NAME" value="Project Files" />
   </component>
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="PandaEditor:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="097bbac4-a84e-42fe-b2b2-5b0ab494b9a1" name="Default Changelist" comment="Default Changelist">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Package SimpleEditor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Package SimpleEditor2.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SimpleEditor/FindWord.java" afterPath="$PROJECT_DIR$/src/SimpleEditor/FindWord.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/SimpleEditor/About.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/SimpleEditor/About.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/SimpleEditor/AutoComplete.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/SimpleEditor/AutoComplete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/SimpleEditor/ClearAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/SimpleEditor/ClearAll.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/SimpleEditor/FindWord.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/SimpleEditor/FindWord.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/SimpleEditor/Format.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/SimpleEditor/Format.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/SimpleEditor/HighLight.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/SimpleEditor/HighLight.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/SimpleEditor/LineNumber.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/SimpleEditor/LineNumber.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/SimpleEditor/Nbutton.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/SimpleEditor/Nbutton.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/SimpleEditor/Setting.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/SimpleEditor/Setting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/SimpleEditor/SimpleEditor.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/SimpleEditor/SimpleEditor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/SimpleEditor/SupportedKeywords.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/SimpleEditor/SupportedKeywords.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/SimpleEditor/TernarySearchTrie.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/SimpleEditor/TernarySearchTrie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/SimpleEditor/Trie.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/SimpleEditor/Trie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/SimpleEditor/UI.SelectAllAction.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/SimpleEditor/UI.SelectAllAction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/SimpleEditor/UI.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/SimpleEditor/UI.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/SimpleEditor/Undo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/SimpleEditor/Undo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/SimpleEditor/Utility.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/SimpleEditor/Utility.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/SimpleEditor/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/SimpleEditor/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/SimpleEditor/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/SimpleEditor/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/SimpleEditor/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/SimpleEditor/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/allclasses-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/allclasses-noframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-15.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-16.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-17.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-17.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-18.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-18.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/overview-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/overview-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/package-list" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/package-list" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/serialized-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleEditor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PandaEditor.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/about.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/about_me.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/bold.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/clear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/cut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/format.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/italic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/new.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/paste.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/redo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/save.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/selectall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/setting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/ste.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/undo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/wordwrap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/保存.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/关于.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/删 除.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/剪切.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/加粗.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/复制.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/多色-文本格式化.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/字体颜色.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/打开文档.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/搜索.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/撤销.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/斜体.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/新增.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/粘贴.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/置换.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/联系.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/自动换行.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/设置.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/200x200/退出.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/40x40/about.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/40x40/about_me.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/40x40/bold.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/40x40/clear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/40x40/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/40x40/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/40x40/cut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/40x40/format.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/40x40/italic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/40x40/new.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/40x40/open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/40x40/paste.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/40x40/redo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/40x40/save.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/40x40/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/40x40/selectall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/40x40/setting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/40x40/ste.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/40x40/undo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/40x40/wordwrap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/40x40/字体颜色.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/40x40/置换.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/about.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/about.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/about_me.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/about_me.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/bold.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/bold.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/clear.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/clear.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/close.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/copy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/copy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/cut.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/cut.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/format.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/format.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/italic.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/italic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/main.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/main.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/new.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/new.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/open.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/open.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/paste.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/paste.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/redo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/redo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/save.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/save.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/search.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/search.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/selectall.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/selectall.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/setting.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/setting.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/undo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/undo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/wordwrap.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/wordwrap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/About$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/About.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete$Mode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete$actionListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete$documentListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete$keyAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/ClearAll.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/FindWord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Format.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/HighLight.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/LineNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Nbutton$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Nbutton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Setting$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Setting$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Setting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/SimpleEditor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/SupportedKeywords.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/TernarySearchTrie$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/TernarySearchTrie$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/TernarySearchTrie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Trie$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Trie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/UI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/UI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/UI$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/UI$SelectAllAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/UI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Undo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Undo$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Undo$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Undo$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Undo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Utility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SwingSets3(BeautyEyeLNFDemo).jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleEditor/About.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PandaEditor/About.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleEditor/AutoComplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PandaEditor/AutoComplete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleEditor/ClearAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PandaEditor/ClearAll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleEditor/FindWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PandaEditor/FindWord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleEditor/Format.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PandaEditor/Format.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleEditor/HighLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PandaEditor/HighLight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleEditor/LineNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PandaEditor/LineNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleEditor/Nbutton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PandaEditor/Nbutton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleEditor/Setting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PandaEditor/Setting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleEditor/SimpleEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PandaEditor/PandaEditor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PandaEditor/SupportedKeywords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleEditor/TernarySearchTrie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PandaEditor/TernarySearchTrie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleEditor/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PandaEditor/Trie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleEditor/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PandaEditor/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleEditor/Undo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PandaEditor/Undo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleEditor/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PandaEditor/Utility.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,274 +206,119 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PandaEditor/UI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="182">
+              <caret line="42" column="54" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="95" />
+              <folding>
+                <element signature="docComment;class#UI#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JAVA/SimpleEditor.Nbutton" pinned="false" current-in-tab="false">
-        <entry file="uml://JAVA/SimpleEditor.Nbutton">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>SimpleEditor.Nbutton</OriginalElement>
-              <nodes>
-                <node x="748.2444444444444" y="22721.0">javax.swing.JComponent</node>
-                <node x="645.75" y="38001.0">javax.swing.JButton</node>
-                <node x="1531.2444444444445" y="27294.0">java.awt.ItemSelectable</node>
-                <node x="1181.0" y="19330.0">javax.swing.TransferHandler.HasGetTransferHandler</node>
-                <node x="533.0" y="108.5">java.awt.MenuContainer</node>
-                <node x="347.0" y="34970.0">javax.accessibility.Accessible</node>
-                <node x="484.2444444444444" y="27006.0">javax.swing.SwingConstants</node>
-                <node x="345.0" y="421.0">java.awt.Component</node>
-                <node x="0.0" y="0.0">java.awt.image.ImageObserver</node>
-                <node x="1042.25" y="162.5">java.io.Serializable</node>
-                <node x="734.25" y="38639.0">SimpleEditor.Nbutton</node>
-                <node x="819.0" y="32071.0">javax.swing.AbstractButton</node>
-                <node x="270.0" y="16071.0">java.awt.Container</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="javax.swing.JComponent" target="javax.swing.TransferHandler.HasGetTransferHandler">
-                  <point x="254.33333333333326" y="-4650.0" />
-                  <point x="1384.0777777777776" y="22696.0" />
-                  <point x="1389.0" y="22696.0" />
-                  <point x="0.0" y="41.0" />
-                </edge>
-                <edge source="javax.swing.JComponent" target="java.awt.Container">
-                  <point x="-254.33333333333337" y="-4650.0" />
-                  <point x="875.411111111111" y="22696.0" />
-                  <point x="715.0" y="22696.0" />
-                  <point x="0.0" y="3300.0" />
-                </edge>
-                <edge source="java.awt.Component" target="java.awt.MenuContainer">
-                  <point x="0.0" y="-7800.0" />
-                  <point x="0.0" y="77.0" />
-                </edge>
-                <edge source="javax.swing.AbstractButton" target="javax.swing.JComponent">
-                  <point x="0.0" y="-2940.0" />
-                  <point x="1170.5" y="32046.0" />
-                  <point x="1129.7444444444445" y="32046.0" />
-                  <point x="0.0" y="4650.0" />
-                </edge>
-                <edge source="SimpleEditor.Nbutton" target="javax.swing.JButton">
-                  <point x="0.0" y="-77.5" />
-                  <point x="0.0" y="294.0" />
-                </edge>
-                <edge source="javax.swing.JButton" target="javax.accessibility.Accessible">
-                  <point x="-113.0" y="-294.0" />
-                  <point x="758.75" y="37976.0" />
-                  <point x="573.0" y="37976.0" />
-                  <point x="0.0" y="41.0" />
-                </edge>
-                <edge source="java.awt.Component" target="java.awt.image.ImageObserver">
-                  <point x="-246.66666666666663" y="-7800.0" />
-                  <point x="468.33333333333337" y="396.0" />
-                  <point x="256.5" y="396.0" />
-                  <point x="0.0" y="185.5" />
-                </edge>
-                <edge source="java.awt.Component" target="java.io.Serializable">
-                  <point x="246.66666666666663" y="-7800.0" />
-                  <point x="961.6666666666666" y="396.0" />
-                  <point x="1085.0" y="396.0" />
-                  <point x="-42.75" y="23.0" />
-                </edge>
-                <edge source="javax.swing.AbstractButton" target="java.awt.ItemSelectable">
-                  <point x="234.33333333333326" y="-2940.0" />
-                  <point x="1404.8333333333333" y="32046.0" />
-                  <point x="1743.2444444444445" y="32046.0" />
-                  <point x="0.0" y="77.0" />
-                </edge>
-                <edge source="javax.swing.AbstractButton" target="javax.swing.SwingConstants">
-                  <point x="-234.33333333333337" y="-2940.0" />
-                  <point x="936.1666666666666" y="32046.0" />
-                  <point x="606.2444444444444" y="32046.0" />
-                  <point x="0.0" y="365.0" />
-                </edge>
-                <edge source="java.awt.Container" target="java.awt.Component">
-                  <point x="0.0" y="-3300.0" />
-                  <point x="0.0" y="7800.0" />
-                </edge>
-                <edge source="javax.swing.JComponent" target="java.io.Serializable">
-                  <point x="0.0" y="-4650.0" />
-                  <point x="1129.7444444444445" y="22696.0" />
-                  <point x="1170.5" y="22696.0" />
-                  <point x="42.75" y="23.0" />
-                </edge>
-                <edge source="javax.swing.JButton" target="javax.swing.AbstractButton">
-                  <point x="113.0" y="-294.0" />
-                  <point x="984.75" y="37976.0" />
-                  <point x="1170.5" y="37976.0" />
-                  <point x="0.0" y="2940.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.019116813520894522" x="-24130.787061994608" y="12544.393530997306" />
-              <SelectedNodes>
-                <node>SimpleEditor.Nbutton</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Constructors</Category>
-                <Category>Methods</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JAVA/SimpleEditor.Setting" pinned="false" current-in-tab="false">
-        <entry file="uml://JAVA/SimpleEditor.Setting">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>SimpleEditor.Setting</OriginalElement>
-              <nodes>
-                <node x="788.0" y="29875.0">java.awt.Frame</node>
-                <node x="961.1666666666665" y="22721.0">java.awt.Window</node>
-                <node x="1960.6666666666665" y="31100.0">javax.swing.TransferHandler.HasGetTransferHandler</node>
-                <node x="0.0" y="30992.0">javax.swing.RootPaneContainer</node>
-                <node x="599.6666666666665" y="108.5">java.awt.MenuContainer</node>
-                <node x="1611.1666666666665" y="19330.0">javax.accessibility.Accessible</node>
-                <node x="776.1666666666665" y="421.0">java.awt.Component</node>
-                <node x="1251.6666666666665" y="0.0">java.awt.image.ImageObserver</node>
-                <node x="1060.6666666666665" y="162.5">java.io.Serializable</node>
-                <node x="872.4166666666665" y="34031.0">SimpleEditor.Setting</node>
-                <node x="701.1666666666665" y="16071.0">java.awt.Container</node>
-                <node x="756.9166666666665" y="32457.0">javax.swing.JFrame</node>
-                <node x="420.0" y="31046.0">javax.swing.WindowConstants</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="java.awt.Window" target="javax.accessibility.Accessible">
-                  <point x="185.0" y="-3552.0" />
-                  <point x="1516.1666666666665" y="22696.0" />
-                  <point x="1724.1666666666665" y="22696.0" />
-                  <point x="-113.0" y="41.0" />
-                </edge>
-                <edge source="SimpleEditor.Setting" target="javax.swing.JFrame">
-                  <point x="0.0" y="-95.5" />
-                  <point x="0.0" y="762.0" />
-                </edge>
-                <edge source="java.awt.Window" target="java.awt.Container">
-                  <point x="-185.0" y="-3552.0" />
-                  <point x="0.0" y="3300.0" />
-                </edge>
-                <edge source="java.awt.Component" target="java.awt.MenuContainer">
-                  <point x="-246.66666666666663" y="-7800.0" />
-                  <point x="899.4999999999998" y="396.0" />
-                  <point x="872.6666666666665" y="396.0" />
-                  <point x="91.0" y="77.0" />
-                </edge>
-                <edge source="javax.swing.JFrame" target="java.awt.Frame">
-                  <point x="0.0" y="-762.0" />
-                  <point x="1010.9166666666665" y="32437.0" />
-                  <point x="1014.0" y="32437.0" />
-                  <point x="0.0" y="1266.0" />
-                </edge>
-                <edge source="java.awt.Component" target="java.awt.image.ImageObserver">
-                  <point x="246.66666666666674" y="-7800.0" />
-                  <point x="1392.8333333333333" y="396.0" />
-                  <point x="1508.1666666666665" y="396.0" />
-                  <point x="0.0" y="185.5" />
-                </edge>
-                <edge source="javax.swing.JFrame" target="javax.swing.WindowConstants">
-                  <point x="-101.60000000000002" y="-762.0" />
-                  <point x="909.3166666666664" y="32427.0" />
-                  <point x="594.0" y="32427.0" />
-                  <point x="0.0" y="95.0" />
-                </edge>
-                <edge source="java.awt.Component" target="java.io.Serializable">
-                  <point x="0.0" y="-7800.0" />
-                  <point x="0.0" y="23.0" />
-                </edge>
-                <edge source="java.awt.Frame" target="java.awt.Window">
-                  <point x="113.0" y="-1266.0" />
-                  <point x="1127.0" y="29850.0" />
-                  <point x="1331.1666666666665" y="29850.0" />
-                  <point x="0.0" y="3552.0" />
-                </edge>
-                <edge source="javax.swing.JFrame" target="javax.swing.RootPaneContainer">
-                  <point x="-203.20000000000005" y="-762.0" />
-                  <point x="807.7166666666665" y="32437.0" />
-                  <point x="200.0" y="32437.0" />
-                  <point x="0.0" y="149.0" />
-                </edge>
-                <edge source="java.awt.Frame" target="java.awt.MenuContainer">
-                  <point x="-113.0" y="-1266.0" />
-                  <point x="901.0" y="29850.0" />
-                  <point x="690.6666666666665" y="29850.0" />
-                  <point x="-91.0" y="77.0" />
-                </edge>
-                <edge source="java.awt.Container" target="java.awt.Component">
-                  <point x="0.0" y="-3300.0" />
-                  <point x="0.0" y="7800.0" />
-                </edge>
-                <edge source="javax.swing.JFrame" target="javax.swing.TransferHandler.HasGetTransferHandler">
-                  <point x="203.20000000000005" y="-762.0" />
-                  <point x="1214.1166666666666" y="32437.0" />
-                  <point x="2168.6666666666665" y="32437.0" />
-                  <point x="0.0" y="41.0" />
-                </edge>
-                <edge source="javax.swing.JFrame" target="javax.accessibility.Accessible">
-                  <point x="101.59999999999991" y="-762.0" />
-                  <point x="1112.5166666666664" y="32427.0" />
-                  <point x="1950.1666666666665" y="32427.0" />
-                  <point x="113.0" y="41.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.02166929501781438" x="-20962.659029649592" y="11065.579514824798" />
-              <SelectedNodes>
-                <node>SimpleEditor.Setting</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Constructors</Category>
-                <Category>Methods</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JAVA/SimpleEditor.SupportedKeywords" pinned="false" current-in-tab="false">
-        <entry file="uml://JAVA/SimpleEditor.SupportedKeywords">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>SimpleEditor.SupportedKeywords</OriginalElement>
-              <nodes>
-                <node x="0.0" y="0.0">SimpleEditor.SupportedKeywords</node>
-              </nodes>
-              <notes />
-              <edges />
-              <settings layout="Hierarchic Group" zoom="0.7673216132368149" x="-375.2237196765499" y="362.7762803234501" />
-              <SelectedNodes>
-                <node>SimpleEditor.SupportedKeywords</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Constructors</Category>
-                <Category>Methods</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TernarySearchTrie.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/TernarySearchTrie.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PandaEditor/Undo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="371">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/PandaEditor/Utility.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PandaEditor/Setting.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="25" column="76" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="76" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PandaEditor/Nbutton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PandaEditor/TernarySearchTrie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PandaEditor/Trie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PandaEditor/SupportedKeywords.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="670">
+              <caret line="113" column="24" selection-start-line="113" selection-start-column="24" selection-end-line="113" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PandaEditor/PandaEditor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PandaEditor/LineNumber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -321,9 +349,18 @@
       <find>Seting</find>
       <find>setFont</find>
       <find>FindWord</find>
+      <find>icons/</find>
+      <find>src/icons/</find>
+      <find>png&quot;);</find>
+      <find>icons</find>
+      <find>getClass().getResource(&quot;/icons/main.png&quot;)</find>
     </findStrings>
     <replaceStrings>
       <replace>Nbutton</replace>
+      <replace>src/icons/</replace>
+      <replace>ImageIcon(getClass().getResource(&quot;/icons/</replace>
+      <replace>png&quot;));</replace>
+      <replace>icons/</replace>
     </replaceStrings>
     <dirStrings>
       <dir>F:\software\java_finnalhw\SimpleEditor\icons</dir>
@@ -332,95 +369,84 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/SimpleEditor/SimpleEditor.java" />
         <option value="$PROJECT_DIR$/src/SimpleEditor/About.java" />
         <option value="$PROJECT_DIR$/src/SimpleEditor/Nbutton.java" />
-        <option value="$PROJECT_DIR$/src/SimpleEditor/UI.java" />
-        <option value="$PROJECT_DIR$/src/SimpleEditor/LineNumber.java" />
-        <option value="$PROJECT_DIR$/src/SimpleEditor/Setting.java" />
-        <option value="$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java" />
         <option value="$PROJECT_DIR$/src/SimpleEditor/HighLight.java" />
+        <option value="$PROJECT_DIR$/src/SimpleEditor/LineNumber.java" />
+        <option value="$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/SimpleEditor/UI.java" />
+        <option value="$PROJECT_DIR$/src/SimpleEditor/Setting.java" />
         <option value="$PROJECT_DIR$/src/SimpleEditor/FindWord.java" />
+        <option value="$PROJECT_DIR$/src/PandaEditor/Utility.java" />
+        <option value="$PROJECT_DIR$/src/PandaEditor/PandaEditor.java" />
+        <option value="$PROJECT_DIR$/src/PandaEditor/UI.java" />
+        <option value="$PROJECT_DIR$/src/PandaEditor/FindWord.java" />
+        <option value="$PROJECT_DIR$/src/PandaEditor/Setting.java" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-171" />
-    <option name="y" value="206" />
-    <option name="width" value="1946" />
-    <option name="height" value="1106" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="394" />
+    <option name="y" value="54" />
+    <option name="width" value="2486" />
+    <option name="height" value="1398" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="SimpleEditor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleEditor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleEditor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleEditor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleEditor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleEditor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="PandaEditor" type="b2602c69:ProjectViewProjectNode" />
               <item name="SimpleEditor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PandaEditor" type="58d84e3e:PackageViewProjectNode" />
+              <item name="PandaEditor" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="simpleeditor" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560018675980" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/SimpleEditor/Setting.java" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560173374209" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/icons" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.uml" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/SimpleEditor/Setting.java" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\software\java_finnalhw\SimpleEditor\src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\software\java_finnalhw\SimpleEditor\src\SimpleEditor" />
       <recent name="F:\software\java_finnalhw\SimpleEditor\src" />
@@ -438,69 +464,62 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SimpleEditor">
+  <component name="RunManager" selected="Application.PandaEditor">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
+      <module name="PandaEditor" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="SimpleEditor" />
-      <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="SimpleEditor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+    <configuration name="PandaEditor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PandaEditor.PandaEditor" />
+      <module name="PandaEditor" />
+      <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SimpleEditor.*" />
+          <option name="PATTERN" value="PandaEditor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="SimpleEditor.SimpleEditor" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleEditor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jre1.8.0_144" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jre1.8.0_211" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="SimpleEditor" />
-      <envs />
+      <option name="MAIN_CLASS_NAME" value="PandaEditor.SimpleEditor" />
+      <module name="PandaEditor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PandaEditor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
+    <configuration name="SimpleEditor.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/SimpleEditor_jar/SimpleEditor.jar" />
+      <method v="2" />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="Application.SimpleEditor" />
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.SimpleEditor" />
+      <item itemvalue="Application.PandaEditor" />
+      <item itemvalue="JAR Application.SimpleEditor.jar" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.SimpleEditor" />
+      <list>
+        <item itemvalue="Application.PandaEditor" />
+        <item itemvalue="Application.SimpleEditor" />
+        <item itemvalue="JAR Application.SimpleEditor.jar" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -515,6 +534,8 @@
       <workItem from="1559985022312" duration="28036000" />
       <workItem from="1560090236974" duration="6434000" />
       <workItem from="1560135995301" duration="1769000" />
+      <workItem from="1560164847498" duration="6135000" />
+      <workItem from="1560171814145" duration="1615000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1560095074120</created>
@@ -527,248 +548,62 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39248000" />
+    <option name="totallyTimeSpent" value="46998000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="35" width="1942" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="2576" height="1426" extended-state="6" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33170134" sideWeight="0.47084233" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33170134" sideWeight="0.52915764" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18482251" sideWeight="0.49568033" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2224622" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925338" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925338" sideWeight="0.50215983" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19475357" />
+      <window_info id="Structure" order="1" weight="0.4910859" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49960256" weight="0.32894737" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7853736" visible="true" weight="0.18111455" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49920508" weight="0.32972136" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.5282194" weight="0.33126935" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.21462639" side_tool="true" visible="true" weight="0.18111455" />
+      <window_info anchor="bottom" id="Statistic" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.50039744" weight="0.32894737" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Maven" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Default Changelist" />
     <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/HighLight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/AutoComplete.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1175">
-          <caret line="68" column="38" lean-forward="false" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Nbutton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/About.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="79" column="29" lean-forward="false" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Undo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-920">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/swing/JComponent.java" />
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/UI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4532">
-          <caret line="218" column="49" lean-forward="false" selection-start-line="218" selection-start-column="49" selection-end-line="218" selection-end-column="49" />
-          <folding>
-            <marker date="1560087448196" expanded="true" signature="22761:23004" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/FindWord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="81" column="5" lean-forward="true" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Setting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108">
-          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Utility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1560087448211" expanded="true" signature="5897:5903" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/LineNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1672">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Trie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2486">
-          <caret line="115" column="75" lean-forward="false" selection-start-line="115" selection-start-column="75" selection-end-line="115" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/SimpleEditor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2880#2881#0" expanded="true" />
-            <element signature="e#2921#2922#0" expanded="true" />
-            <element signature="e#3279#3280#0" expanded="true" />
-            <element signature="e#3306#3307#0" expanded="true" />
-            <element signature="e#3778#3779#0" expanded="true" />
-            <element signature="e#3841#3842#0" expanded="true" />
-            <element signature="e#4220#4221#0" expanded="true" />
-            <element signature="e#4251#4252#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9468">
-          <caret line="273" column="32" lean-forward="false" selection-start-line="273" selection-start-column="32" selection-end-line="273" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="16" column="53" lean-forward="false" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2880#2881#0" expanded="true" />
-            <element signature="e#2921#2922#0" expanded="true" />
-            <element signature="e#3279#3280#0" expanded="true" />
-            <element signature="e#3306#3307#0" expanded="true" />
-            <element signature="e#3778#3779#0" expanded="true" />
-            <element signature="e#3841#3842#0" expanded="true" />
-            <element signature="e#4220#4221#0" expanded="true" />
-            <element signature="e#4251#4252#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/SimpleEditor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/swing/JComponent.java" />
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Setting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Nbutton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/HighLight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="44" column="68" lean-forward="false" selection-start-line="44" selection-start-column="68" selection-end-line="44" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://JavaScript-modules-diagram/C:/Users/AdamWong/Documents/Computer Science Homework/SimpleEditor/src/SimpleEditor">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -789,8 +624,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="11" />
+        <state>
+          <caret selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -940,14 +775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/ClearAll.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://JAVA/SimpleEditor.About">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -995,24 +822,16 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.11742233910164597" x="4376.712291787478" y="37567.53508368494" />
+          <settings layout="Hierarchic Group" zoom="0.11742233910164597" x="4377.0" y="37568.0" />
           <SelectedNodes />
           <Categories>
-            <Category>Methods</Category>
-            <Category>Constructors</Category>
             <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
             <Category>Properties</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/AutoComplete.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="55" column="6" lean-forward="false" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1026,7 +845,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.8627906976744186" x="-287.83288409703505" y="308.16711590296495" />
+          <settings layout="Hierarchic Group" zoom="0.8627906976744186" x="-288.0" y="308.0" />
           <SelectedNodes>
             <node>SimpleEditor.AutoComplete</node>
           </SelectedNodes>
@@ -1064,14 +883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/FindWord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="121" column="9" lean-forward="true" selection-start-line="121" selection-start-column="9" selection-end-line="121" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://JAVA/SimpleEditor.Format">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1082,7 +893,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-237.5" y="18.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-237.0" y="19.0" />
           <SelectedNodes>
             <node>SimpleEditor.Format</node>
           </SelectedNodes>
@@ -1209,7 +1020,7 @@
               <point x="96.0" y="41.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.12139870223503965" x="-2601.04311675971" y="15907.95688324029" />
+          <settings layout="Hierarchic Group" zoom="0.12139870223503965" x="-2601.0" y="15908.0" />
           <SelectedNodes>
             <node>SimpleEditor.FindWord</node>
           </SelectedNodes>
@@ -1250,7 +1061,7 @@
               <point x="0.0" y="59.5" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.9392405063291139" x="-180.4743935309973" y="285.5256064690027" />
+          <settings layout="Hierarchic Group" zoom="0.9392405063291139" x="-180.0" y="286.0" />
           <SelectedNodes>
             <node>SimpleEditor.HighLight</node>
           </SelectedNodes>
@@ -1261,32 +1072,6 @@
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/LineNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/About.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="79" column="29" lean-forward="false" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Format.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1352,7 +1137,7 @@
               <point x="-42.75" y="23.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.02263092079177723" x="-20448.419137466306" y="10594.959568733153" />
+          <settings layout="Hierarchic Group" zoom="0.02263092079177723" x="-20448.0" y="10595.0" />
           <SelectedNodes>
             <node>SimpleEditor.LineNumber</node>
           </SelectedNodes>
@@ -1465,7 +1250,7 @@
               <point x="113.0" y="41.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.02166929501781438" x="-20962.659029649592" y="11065.579514824798" />
+          <settings layout="Hierarchic Group" zoom="0.02166929501781438" x="-20963.0" y="11066.0" />
           <SelectedNodes>
             <node>SimpleEditor.Setting</node>
           </SelectedNodes>
@@ -1489,7 +1274,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.7673216132368149" x="-375.2237196765499" y="362.7762803234501" />
+          <settings layout="Hierarchic Group" zoom="0.7673216132368149" x="-375.0" y="363.0" />
           <SelectedNodes>
             <node>SimpleEditor.SupportedKeywords</node>
           </SelectedNodes>
@@ -1513,7 +1298,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.796137339055794" x="-303.911051212938" y="291.455525606469" />
+          <settings layout="Hierarchic Group" zoom="0.796137339055794" x="-304.0" y="291.0" />
           <SelectedNodes>
             <node>SimpleEditor.TernarySearchTrie</node>
           </SelectedNodes>
@@ -1537,7 +1322,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-173.5" y="145.0" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-173.0" y="145.0" />
           <SelectedNodes>
             <node>SimpleEditor.Trie</node>
           </SelectedNodes>
@@ -1548,16 +1333,6 @@
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/UI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="412" column="90" lean-forward="false" selection-start-line="412" selection-start-column="82" selection-end-line="412" selection-end-column="90" />
-          <folding>
-            <marker date="1560087448196" expanded="true" signature="22761:23004" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1585,7 +1360,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.020045927326759423" x="1351.5202156334199" y="18357.5" />
+          <settings layout="Hierarchic Group" zoom="0.020045927326759423" x="1352.0" y="18358.0" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
@@ -1594,22 +1369,6 @@
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Trie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Undo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1623,7 +1382,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="261.5" y="293.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="262.0" y="294.0" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
@@ -1666,14 +1425,6 @@
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/TernarySearchTrie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1772,7 +1523,7 @@
               <point x="0.0" y="2940.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.019116813520894522" x="-24130.787061994608" y="12544.393530997306" />
+          <settings layout="Hierarchic Group" zoom="0.019116813520894522" x="-24131.0" y="12544.0" />
           <SelectedNodes>
             <node>SimpleEditor.Nbutton</node>
           </SelectedNodes>
@@ -1788,9 +1539,226 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="108">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class diagram/PANDA_EDITOR.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/artifacts/SimpleEditor_jar.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/description.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2808" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="322" column="25" selection-start-line="322" selection-start-column="25" selection-end-line="322" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/.name">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PandaEditor/AutoComplete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="708">
+          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/swing/ImageIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="216" selection-start-line="216" selection-end-line="216" />
+          <folding>
+            <element signature="e#6758#6759#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PandaEditor/About.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="86" column="10" selection-start-line="86" selection-start-column="10" selection-end-line="86" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PandaEditor/ClearAll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PandaEditor/FindWord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="25" column="47" lean-forward="true" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PandaEditor/Format.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PandaEditor/HighLight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="647">
+          <caret line="44" column="67" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PandaEditor/LineNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PandaEditor/Nbutton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PandaEditor/PandaEditor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PandaEditor/Setting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="25" column="76" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PandaEditor/SupportedKeywords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="670">
+          <caret line="113" column="24" selection-start-line="113" selection-start-column="24" selection-end-line="113" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PandaEditor/TernarySearchTrie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PandaEditor/Trie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PandaEditor/UI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="42" column="54" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="95" />
+          <folding>
+            <element signature="docComment;class#UI#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PandaEditor/Undo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PandaEditor/Utility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1800,10 +1768,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>PandaEditor:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1846,11 +1816,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>SimpleEditor</last-edited>
+          <last-edited>PandaEditor</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SimpleEditor.iml" filepath="$PROJECT_DIR$/SimpleEditor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PandaEditor.iml" filepath="$PROJECT_DIR$/PandaEditor.iml" />
     </modules>
   </component>
 </project>

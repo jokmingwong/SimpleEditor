@@ -2,7 +2,7 @@
 
  
 
-![img](icons/main.png)
+![img](src/icons/main.png)
 
 ## Contributor
 

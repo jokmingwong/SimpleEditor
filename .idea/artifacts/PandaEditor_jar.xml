@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="PandaEditor:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/PandaEditor_jar</output-path>
+    <root id="archive" name="PandaEditor.jar">
+      <element id="module-output" name="PandaEditor" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/SwingSets3(BeautyEyeLNFDemo).jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
