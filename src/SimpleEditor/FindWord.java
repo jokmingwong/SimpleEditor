@@ -132,7 +132,7 @@ public class FindWord extends JFrame implements ActionListener {
         }
     }
 
-    public void replaceAll() {
+    void replaceAll() {
         text.setText(text.getText().replaceAll(textFind.getText(), textReplace.getText()));
     }
 
