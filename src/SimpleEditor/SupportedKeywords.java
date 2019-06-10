@@ -106,11 +106,11 @@ public class SupportedKeywords {
         SupportedKeywords.bracketMap = bracketMap;
     }
 
-    public Map<String, String> getBracketMap() {
+    static Map<String, String> getBracketMap() {
         return bracketMap;
     }
 
-    public static Set<String> getSpaceSet() {
+    static Set<String> getSpaceSet() {
         return spaceSet;
     }
 

@@ -6,12 +6,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="097bbac4-a84e-42fe-b2b2-5b0ab494b9a1" name="Default Changelist" comment="Default Changelist">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Package SimpleEditor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Package SimpleEditor2.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/FindWord.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Format.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/LineNumber.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/UI$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/UI$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/UI$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/UI$SelectAllAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/UI.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/Utility.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete$actionListener.class" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete$actionListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete$documentListener.class" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete$documentListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete$keyAdapter.class" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete$keyAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete.class" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/AutoComplete.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/HighLight.class" afterPath="$PROJECT_DIR$/out/production/SimpleEditor/SimpleEditor/HighLight.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SimpleEditor/FindWord.java" afterPath="$PROJECT_DIR$/src/SimpleEditor/FindWord.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SimpleEditor/LineNumber.java" afterPath="$PROJECT_DIR$/src/SimpleEditor/LineNumber.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java" afterPath="$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,264 +34,96 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            <state relative-caret-position="22">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JAVA/SimpleEditor.Nbutton" pinned="false" current-in-tab="false">
-        <entry file="uml://JAVA/SimpleEditor.Nbutton">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>SimpleEditor.Nbutton</OriginalElement>
-              <nodes>
-                <node x="748.2444444444444" y="22721.0">javax.swing.JComponent</node>
-                <node x="645.75" y="38001.0">javax.swing.JButton</node>
-                <node x="1531.2444444444445" y="27294.0">java.awt.ItemSelectable</node>
-                <node x="1181.0" y="19330.0">javax.swing.TransferHandler.HasGetTransferHandler</node>
-                <node x="533.0" y="108.5">java.awt.MenuContainer</node>
-                <node x="347.0" y="34970.0">javax.accessibility.Accessible</node>
-                <node x="484.2444444444444" y="27006.0">javax.swing.SwingConstants</node>
-                <node x="345.0" y="421.0">java.awt.Component</node>
-                <node x="0.0" y="0.0">java.awt.image.ImageObserver</node>
-                <node x="1042.25" y="162.5">java.io.Serializable</node>
-                <node x="734.25" y="38639.0">SimpleEditor.Nbutton</node>
-                <node x="819.0" y="32071.0">javax.swing.AbstractButton</node>
-                <node x="270.0" y="16071.0">java.awt.Container</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="javax.swing.JComponent" target="javax.swing.TransferHandler.HasGetTransferHandler">
-                  <point x="254.33333333333326" y="-4650.0" />
-                  <point x="1384.0777777777776" y="22696.0" />
-                  <point x="1389.0" y="22696.0" />
-                  <point x="0.0" y="41.0" />
-                </edge>
-                <edge source="javax.swing.JComponent" target="java.awt.Container">
-                  <point x="-254.33333333333337" y="-4650.0" />
-                  <point x="875.411111111111" y="22696.0" />
-                  <point x="715.0" y="22696.0" />
-                  <point x="0.0" y="3300.0" />
-                </edge>
-                <edge source="java.awt.Component" target="java.awt.MenuContainer">
-                  <point x="0.0" y="-7800.0" />
-                  <point x="0.0" y="77.0" />
-                </edge>
-                <edge source="javax.swing.AbstractButton" target="javax.swing.JComponent">
-                  <point x="0.0" y="-2940.0" />
-                  <point x="1170.5" y="32046.0" />
-                  <point x="1129.7444444444445" y="32046.0" />
-                  <point x="0.0" y="4650.0" />
-                </edge>
-                <edge source="SimpleEditor.Nbutton" target="javax.swing.JButton">
-                  <point x="0.0" y="-77.5" />
-                  <point x="0.0" y="294.0" />
-                </edge>
-                <edge source="javax.swing.JButton" target="javax.accessibility.Accessible">
-                  <point x="-113.0" y="-294.0" />
-                  <point x="758.75" y="37976.0" />
-                  <point x="573.0" y="37976.0" />
-                  <point x="0.0" y="41.0" />
-                </edge>
-                <edge source="java.awt.Component" target="java.awt.image.ImageObserver">
-                  <point x="-246.66666666666663" y="-7800.0" />
-                  <point x="468.33333333333337" y="396.0" />
-                  <point x="256.5" y="396.0" />
-                  <point x="0.0" y="185.5" />
-                </edge>
-                <edge source="java.awt.Component" target="java.io.Serializable">
-                  <point x="246.66666666666663" y="-7800.0" />
-                  <point x="961.6666666666666" y="396.0" />
-                  <point x="1085.0" y="396.0" />
-                  <point x="-42.75" y="23.0" />
-                </edge>
-                <edge source="javax.swing.AbstractButton" target="java.awt.ItemSelectable">
-                  <point x="234.33333333333326" y="-2940.0" />
-                  <point x="1404.8333333333333" y="32046.0" />
-                  <point x="1743.2444444444445" y="32046.0" />
-                  <point x="0.0" y="77.0" />
-                </edge>
-                <edge source="javax.swing.AbstractButton" target="javax.swing.SwingConstants">
-                  <point x="-234.33333333333337" y="-2940.0" />
-                  <point x="936.1666666666666" y="32046.0" />
-                  <point x="606.2444444444444" y="32046.0" />
-                  <point x="0.0" y="365.0" />
-                </edge>
-                <edge source="java.awt.Container" target="java.awt.Component">
-                  <point x="0.0" y="-3300.0" />
-                  <point x="0.0" y="7800.0" />
-                </edge>
-                <edge source="javax.swing.JComponent" target="java.io.Serializable">
-                  <point x="0.0" y="-4650.0" />
-                  <point x="1129.7444444444445" y="22696.0" />
-                  <point x="1170.5" y="22696.0" />
-                  <point x="42.75" y="23.0" />
-                </edge>
-                <edge source="javax.swing.JButton" target="javax.swing.AbstractButton">
-                  <point x="113.0" y="-294.0" />
-                  <point x="984.75" y="37976.0" />
-                  <point x="1170.5" y="37976.0" />
-                  <point x="0.0" y="2940.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.019116813520894522" x="-24130.787061994608" y="12544.393530997306" />
-              <SelectedNodes>
-                <node>SimpleEditor.Nbutton</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Constructors</Category>
-                <Category>Methods</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
+      <file leaf-file-name="Utility.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Utility.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#213#214#0" expanded="true" />
+                <element signature="e#244#245#0" expanded="true" />
+                <element signature="e#7768#7777#0" expanded="true" />
+                <marker date="1560168457704" expanded="true" signature="10746:10752" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JAVA/SimpleEditor.Setting" pinned="false" current-in-tab="false">
-        <entry file="uml://JAVA/SimpleEditor.Setting">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>SimpleEditor.Setting</OriginalElement>
-              <nodes>
-                <node x="788.0" y="29875.0">java.awt.Frame</node>
-                <node x="961.1666666666665" y="22721.0">java.awt.Window</node>
-                <node x="1960.6666666666665" y="31100.0">javax.swing.TransferHandler.HasGetTransferHandler</node>
-                <node x="0.0" y="30992.0">javax.swing.RootPaneContainer</node>
-                <node x="599.6666666666665" y="108.5">java.awt.MenuContainer</node>
-                <node x="1611.1666666666665" y="19330.0">javax.accessibility.Accessible</node>
-                <node x="776.1666666666665" y="421.0">java.awt.Component</node>
-                <node x="1251.6666666666665" y="0.0">java.awt.image.ImageObserver</node>
-                <node x="1060.6666666666665" y="162.5">java.io.Serializable</node>
-                <node x="872.4166666666665" y="34031.0">SimpleEditor.Setting</node>
-                <node x="701.1666666666665" y="16071.0">java.awt.Container</node>
-                <node x="756.9166666666665" y="32457.0">javax.swing.JFrame</node>
-                <node x="420.0" y="31046.0">javax.swing.WindowConstants</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="java.awt.Window" target="javax.accessibility.Accessible">
-                  <point x="185.0" y="-3552.0" />
-                  <point x="1516.1666666666665" y="22696.0" />
-                  <point x="1724.1666666666665" y="22696.0" />
-                  <point x="-113.0" y="41.0" />
-                </edge>
-                <edge source="SimpleEditor.Setting" target="javax.swing.JFrame">
-                  <point x="0.0" y="-95.5" />
-                  <point x="0.0" y="762.0" />
-                </edge>
-                <edge source="java.awt.Window" target="java.awt.Container">
-                  <point x="-185.0" y="-3552.0" />
-                  <point x="0.0" y="3300.0" />
-                </edge>
-                <edge source="java.awt.Component" target="java.awt.MenuContainer">
-                  <point x="-246.66666666666663" y="-7800.0" />
-                  <point x="899.4999999999998" y="396.0" />
-                  <point x="872.6666666666665" y="396.0" />
-                  <point x="91.0" y="77.0" />
-                </edge>
-                <edge source="javax.swing.JFrame" target="java.awt.Frame">
-                  <point x="0.0" y="-762.0" />
-                  <point x="1010.9166666666665" y="32437.0" />
-                  <point x="1014.0" y="32437.0" />
-                  <point x="0.0" y="1266.0" />
-                </edge>
-                <edge source="java.awt.Component" target="java.awt.image.ImageObserver">
-                  <point x="246.66666666666674" y="-7800.0" />
-                  <point x="1392.8333333333333" y="396.0" />
-                  <point x="1508.1666666666665" y="396.0" />
-                  <point x="0.0" y="185.5" />
-                </edge>
-                <edge source="javax.swing.JFrame" target="javax.swing.WindowConstants">
-                  <point x="-101.60000000000002" y="-762.0" />
-                  <point x="909.3166666666664" y="32427.0" />
-                  <point x="594.0" y="32427.0" />
-                  <point x="0.0" y="95.0" />
-                </edge>
-                <edge source="java.awt.Component" target="java.io.Serializable">
-                  <point x="0.0" y="-7800.0" />
-                  <point x="0.0" y="23.0" />
-                </edge>
-                <edge source="java.awt.Frame" target="java.awt.Window">
-                  <point x="113.0" y="-1266.0" />
-                  <point x="1127.0" y="29850.0" />
-                  <point x="1331.1666666666665" y="29850.0" />
-                  <point x="0.0" y="3552.0" />
-                </edge>
-                <edge source="javax.swing.JFrame" target="javax.swing.RootPaneContainer">
-                  <point x="-203.20000000000005" y="-762.0" />
-                  <point x="807.7166666666665" y="32437.0" />
-                  <point x="200.0" y="32437.0" />
-                  <point x="0.0" y="149.0" />
-                </edge>
-                <edge source="java.awt.Frame" target="java.awt.MenuContainer">
-                  <point x="-113.0" y="-1266.0" />
-                  <point x="901.0" y="29850.0" />
-                  <point x="690.6666666666665" y="29850.0" />
-                  <point x="-91.0" y="77.0" />
-                </edge>
-                <edge source="java.awt.Container" target="java.awt.Component">
-                  <point x="0.0" y="-3300.0" />
-                  <point x="0.0" y="7800.0" />
-                </edge>
-                <edge source="javax.swing.JFrame" target="javax.swing.TransferHandler.HasGetTransferHandler">
-                  <point x="203.20000000000005" y="-762.0" />
-                  <point x="1214.1166666666666" y="32437.0" />
-                  <point x="2168.6666666666665" y="32437.0" />
-                  <point x="0.0" y="41.0" />
-                </edge>
-                <edge source="javax.swing.JFrame" target="javax.accessibility.Accessible">
-                  <point x="101.59999999999991" y="-762.0" />
-                  <point x="1112.5166666666664" y="32427.0" />
-                  <point x="1950.1666666666665" y="32427.0" />
-                  <point x="113.0" y="41.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.02166929501781438" x="-20962.659029649592" y="11065.579514824798" />
-              <SelectedNodes>
-                <node>SimpleEditor.Setting</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Constructors</Category>
-                <Category>Methods</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
+      <file leaf-file-name="SupportedKeywords.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="112" column="4" lean-forward="false" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JAVA/SimpleEditor.SupportedKeywords" pinned="false" current-in-tab="false">
-        <entry file="uml://JAVA/SimpleEditor.SupportedKeywords">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>SimpleEditor.SupportedKeywords</OriginalElement>
-              <nodes>
-                <node x="0.0" y="0.0">SimpleEditor.SupportedKeywords</node>
-              </nodes>
-              <notes />
-              <edges />
-              <settings layout="Hierarchic Group" zoom="0.7673216132368149" x="-375.2237196765499" y="362.7762803234501" />
-              <SelectedNodes>
-                <node>SimpleEditor.SupportedKeywords</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Constructors</Category>
-                <Category>Methods</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
+      <file leaf-file-name="UI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/UI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="114" column="38" lean-forward="false" selection-start-line="114" selection-start-column="38" selection-end-line="114" selection-end-column="38" />
+              <folding>
+                <marker date="1560087448196" expanded="true" signature="22761:23004" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LineNumber.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/LineNumber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Nbutton.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Nbutton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimpleEditor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/SimpleEditor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Setting.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Setting.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-198">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -288,9 +131,11 @@
       <file leaf-file-name="TernarySearchTrie.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SimpleEditor/TernarySearchTrie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="462">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <marker date="1560168457678" expanded="true" signature="5726:5792" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -345,11 +190,12 @@
         <option value="$PROJECT_DIR$/src/SimpleEditor/About.java" />
         <option value="$PROJECT_DIR$/src/SimpleEditor/Nbutton.java" />
         <option value="$PROJECT_DIR$/src/SimpleEditor/UI.java" />
-        <option value="$PROJECT_DIR$/src/SimpleEditor/LineNumber.java" />
         <option value="$PROJECT_DIR$/src/SimpleEditor/Setting.java" />
-        <option value="$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java" />
         <option value="$PROJECT_DIR$/src/SimpleEditor/HighLight.java" />
         <option value="$PROJECT_DIR$/src/SimpleEditor/FindWord.java" />
+        <option value="$PROJECT_DIR$/src/SimpleEditor/LineNumber.java" />
+        <option value="$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java" />
+        <option value="$PROJECT_DIR$/src/SimpleEditor/Utility.java" />
       </list>
     </option>
   </component>
@@ -359,7 +205,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-171" />
     <option name="y" value="206" />
     <option name="width" value="1946" />
@@ -381,9 +227,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -406,7 +249,10 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -514,7 +360,8 @@
       <updated>1559985020742</updated>
       <workItem from="1559985022312" duration="28036000" />
       <workItem from="1560090236974" duration="6434000" />
-      <workItem from="1560135995301" duration="1769000" />
+      <workItem from="1560135995301" duration="2951000" />
+      <workItem from="1560168389299" duration="319000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1560095074120</created>
@@ -527,40 +374,41 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39248000" />
+    <option name="totallyTimeSpent" value="40749000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="35" width="1942" height="1056" extended-state="7" />
+    <frame x="-11" y="35" width="1942" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925338" sideWeight="0.50215983" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33170134" sideWeight="0.47084233" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="89" y="135" width="1742" height="856" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33170134" sideWeight="0.52915764" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18482251" sideWeight="0.49568033" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33170134" sideWeight="0.52915764" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2224622" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2262419" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925338" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925338" sideWeight="0.50215983" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925338" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -651,17 +499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Utility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1560087448211" expanded="true" signature="5897:5903" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SimpleEditor/LineNumber.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1672">
@@ -701,8 +538,8 @@
             <element signature="e#3306#3307#0" expanded="true" />
             <element signature="e#3778#3779#0" expanded="true" />
             <element signature="e#3841#3842#0" expanded="true" />
-            <element signature="e#4220#4221#0" expanded="true" />
-            <element signature="e#4251#4252#0" expanded="true" />
+            <element signature="e#4213#4214#0" expanded="true" />
+            <element signature="e#4244#4245#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -714,53 +551,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="16" column="53" lean-forward="false" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2880#2881#0" expanded="true" />
-            <element signature="e#2921#2922#0" expanded="true" />
-            <element signature="e#3279#3280#0" expanded="true" />
-            <element signature="e#3306#3307#0" expanded="true" />
-            <element signature="e#3778#3779#0" expanded="true" />
-            <element signature="e#3841#3842#0" expanded="true" />
-            <element signature="e#4220#4221#0" expanded="true" />
-            <element signature="e#4251#4252#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/SimpleEditor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/swing/JComponent.java" />
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Setting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Nbutton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SimpleEditor/HighLight.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="836">
@@ -995,13 +786,13 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.11742233910164597" x="4376.712291787478" y="37567.53508368494" />
+          <settings layout="Hierarchic Group" zoom="0.11742233910164597" x="4377.0" y="37568.0" />
           <SelectedNodes />
           <Categories>
-            <Category>Methods</Category>
-            <Category>Constructors</Category>
             <Category>Fields</Category>
+            <Category>Constructors</Category>
             <Category>Properties</Category>
+            <Category>Methods</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
@@ -1026,7 +817,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.8627906976744186" x="-287.83288409703505" y="308.16711590296495" />
+          <settings layout="Hierarchic Group" zoom="0.8627906976744186" x="-288.0" y="308.0" />
           <SelectedNodes>
             <node>SimpleEditor.AutoComplete</node>
           </SelectedNodes>
@@ -1082,7 +873,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-237.5" y="18.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-237.0" y="19.0" />
           <SelectedNodes>
             <node>SimpleEditor.Format</node>
           </SelectedNodes>
@@ -1209,15 +1000,15 @@
               <point x="96.0" y="41.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.12139870223503965" x="-2601.04311675971" y="15907.95688324029" />
+          <settings layout="Hierarchic Group" zoom="0.12139870223503965" x="-2601.0" y="15908.0" />
           <SelectedNodes>
             <node>SimpleEditor.FindWord</node>
           </SelectedNodes>
           <Categories>
             <Category>Fields</Category>
             <Category>Constructors</Category>
-            <Category>Methods</Category>
             <Category>Properties</Category>
+            <Category>Methods</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
@@ -1250,7 +1041,7 @@
               <point x="0.0" y="59.5" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.9392405063291139" x="-180.4743935309973" y="285.5256064690027" />
+          <settings layout="Hierarchic Group" zoom="0.9392405063291139" x="-180.0" y="286.0" />
           <SelectedNodes>
             <node>SimpleEditor.HighLight</node>
           </SelectedNodes>
@@ -1261,16 +1052,6 @@
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/LineNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1352,7 +1133,7 @@
               <point x="-42.75" y="23.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.02263092079177723" x="-20448.419137466306" y="10594.959568733153" />
+          <settings layout="Hierarchic Group" zoom="0.02263092079177723" x="-20448.0" y="10595.0" />
           <SelectedNodes>
             <node>SimpleEditor.LineNumber</node>
           </SelectedNodes>
@@ -1465,7 +1246,7 @@
               <point x="113.0" y="41.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.02166929501781438" x="-20962.659029649592" y="11065.579514824798" />
+          <settings layout="Hierarchic Group" zoom="0.02166929501781438" x="-20963.0" y="11066.0" />
           <SelectedNodes>
             <node>SimpleEditor.Setting</node>
           </SelectedNodes>
@@ -1489,7 +1270,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.7673216132368149" x="-375.2237196765499" y="362.7762803234501" />
+          <settings layout="Hierarchic Group" zoom="0.7673216132368149" x="-375.0" y="363.0" />
           <SelectedNodes>
             <node>SimpleEditor.SupportedKeywords</node>
           </SelectedNodes>
@@ -1513,7 +1294,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.796137339055794" x="-303.911051212938" y="291.455525606469" />
+          <settings layout="Hierarchic Group" zoom="0.796137339055794" x="-304.0" y="291.0" />
           <SelectedNodes>
             <node>SimpleEditor.TernarySearchTrie</node>
           </SelectedNodes>
@@ -1537,7 +1318,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-173.5" y="145.0" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-173.0" y="145.0" />
           <SelectedNodes>
             <node>SimpleEditor.Trie</node>
           </SelectedNodes>
@@ -1548,16 +1329,6 @@
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/UI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="412" column="90" lean-forward="false" selection-start-line="412" selection-start-column="82" selection-end-line="412" selection-end-column="90" />
-          <folding>
-            <marker date="1560087448196" expanded="true" signature="22761:23004" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1585,7 +1356,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.020045927326759423" x="1351.5202156334199" y="18357.5" />
+          <settings layout="Hierarchic Group" zoom="0.020045927326759423" x="1352.0" y="18358.0" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
@@ -1623,7 +1394,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="261.5" y="293.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="262.0" y="294.0" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
@@ -1671,9 +1442,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SimpleEditor/TernarySearchTrie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="462">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <marker date="1560168457678" expanded="true" signature="5726:5792" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1772,7 +1545,7 @@
               <point x="0.0" y="2940.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.019116813520894522" x="-24130.787061994608" y="12544.393530997306" />
+          <settings layout="Hierarchic Group" zoom="0.019116813520894522" x="-24131.0" y="12544.0" />
           <SelectedNodes>
             <node>SimpleEditor.Nbutton</node>
           </SelectedNodes>
@@ -1788,9 +1561,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/SimpleEditor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Setting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/UI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="114" column="38" lean-forward="false" selection-start-line="114" selection-start-column="38" selection-end-line="114" selection-end-column="38" />
+          <folding>
+            <marker date="1560087448196" expanded="true" signature="22761:23004" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Nbutton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/LineNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/SupportedKeywords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="112" column="4" lean-forward="false" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEditor/Utility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#7768#7777#0" expanded="true" />
+            <marker date="1560168457704" expanded="true" signature="10746:10752" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

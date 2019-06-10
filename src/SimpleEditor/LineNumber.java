@@ -1,4 +1,4 @@
-package simplejavatexteditor;
+package SimpleEditor;
 
 /*
  * LineNumber.java
