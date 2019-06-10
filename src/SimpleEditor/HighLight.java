@@ -2,6 +2,7 @@ package SimpleEditor;
 
 
 import java.awt.*;
+import java.util.TreeSet;
 import javax.swing.text.*;
 
 
@@ -11,13 +12,13 @@ import javax.swing.text.*;
  *
  * @author adam
  */
-public class HighLight extends DefaultHighlighter.DefaultHighlightPainter {
+class HighLight extends DefaultHighlighter.DefaultHighlightPainter {
     /**
      * Construct HighLight using RGB value directly
      *
      * @param RGBValue RGB value is an integer to define a color
      */
-    public HighLight(int RGBValue) {
+    HighLight(int RGBValue) {
         super(new Color(RGBValue));
     }
 
@@ -27,7 +28,7 @@ public class HighLight extends DefaultHighlighter.DefaultHighlightPainter {
      *
      * @param color this is a element using new Color(int RGBValue) to create
      */
-    public HighLight(Color color) {
+    HighLight(Color color) {
         super(color);
     }
 
@@ -36,26 +37,56 @@ public class HighLight extends DefaultHighlighter.DefaultHighlightPainter {
      * @param textComponent a java text component in java swing
      * @param pattern String list which are supported key words
      */
-    public void paint(JTextComponent textComponent, String[] pattern) {
+    void paint(JTextComponent textComponent, String[] pattern) {
         try {
             cancelPaint(textComponent);
             Highlighter highlighter = textComponent.getHighlighter();
             Document document = textComponent.getDocument();
             String text = document.getText(0, document.getLength());
             // Find the word directly by using the method indexOf()
+
+            // fix the bug of index error @author Adam
             for (String p : pattern) {
                 int pos = 0;
-                while ((pos = text.indexOf(p, pos)) >= 0) {
+                for (;(pos = text.indexOf(p, pos)) >= 0;pos+=p.length()) {
+                    //if(pos==0||(pos+p.length()==text.length())||(text.charAt(pos-1)==' '&&text.charAt(pos+p.length())==' ')) {
+
+                    if(pos>0&&(Character.isLetter(text.charAt(pos-1))||Character.isDigit(text.charAt(pos-1))))continue;
+                    if(pos+p.length()<text.length()&&(Character.isLetter(pos+p.length())||Character.isDigit(pos+p.length())))continue;
+
                     highlighter.addHighlight(pos, pos + p.length(), this);
-                    pos += p.length();
+                   // }
                 }
             }
+
+         /*   TreeSet<String>patternTreeSet=new TreeSet<>();
+            for(String pp:pattern){
+                patternTreeSet.add(pp);
+            }
+            StringBuilder word;
+            int len=text.length();
+            for(int pos=0;pos<len;pos++){
+                if(text.charAt(pos)==' ')continue;
+                word=new StringBuilder("");
+                while (text.charAt(pos)!=' '&& pos<len){
+                    word.append(text.charAt(pos));
+                    pos++;
+                }
+                if(patternTreeSet.contains(word.toString())){
+                    highlighter.addHighlight(pos-word.length(), pos, this);
+                }
+            }*/
+
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    public void cancelPaint(JTextComponent textComponent) {
+    /**
+     * @param textComponent The text we want to cancel the highlight
+     * Cancel the highlight paint on the text component
+     */
+    private void cancelPaint(JTextComponent textComponent) {
         Highlighter ht = textComponent.getHighlighter();
         Highlighter.Highlight[] highlights = ht.getHighlights();
         for (Highlighter.Highlight h : highlights) {
